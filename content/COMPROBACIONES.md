@@ -34,3 +34,13 @@ No se afirma que el banco esté validado psicométricamente. La revisión de con
 ## Corrección del desbordamiento del mapa
 
 El mapa de 20 preguntas desbordaba internamente: con una tarjeta de 215 px, la cuadrícula disponía de 173 px pero ocupaba 198 px. La combinación de columnas `1fr`, proporción cuadrada y altura mínima de los botones imponía un ancho mínimo que no cabía. Se cambió a columnas `minmax(0,1fr)`, se eliminó esa transferencia de tamaño mediante `aspect-ratio: auto` y se ajustó el padding de los botones. El mapa largo tiene desplazamiento vertical dentro de su recuadro. La comprobación incluye los límites de la tarjeta, no solo el ancho total de la página.
+
+## Pruebas de usuario con dos subagentes Luna (razonamiento máximo)
+
+Se usaron puertos locales separados (4174 y 4175) para aislar los datos de prueba. Ambos revisores actuaron con la interfaz y no modificaron código. Sus vistas fueron de escritorio; las pruebas de siete anchuras del mapa las realizó el agente principal.
+
+- Estudio: corrección de aciertos y fallos, explicación y referencias, resultado con pendientes, filtro de errores, nuevo intento acertado y retirada del fallo. Se navegó también a la pregunta 100 y por el mapa largo.
+- Examen: cambio de respuesta, avanzar y volver, finalización con blancos, guardado y reanudación, recarga, tema claro/oscuro y exportación/importación de una copia de prueba. La importación se completó por el control accesible con Enter; la captura del evento de clic del selector de archivos tuvo una limitación en la herramienta y no se atribuyó al producto.
+- Hallazgo corregido: en estudio se distingue ahora una opción «seleccionada, pendiente de comprobar» de una «corregida». El contador indica «comprobadas» y el texto explica cuándo cuenta una selección.
+- Hallazgo corregido: el grupo de respuesta única tiene semántica `radiogroup`/`radio`, un punto de entrada con Tab y cambio de selección mediante flechas. La comprobación en navegador confirmó que se anuncia como radio y que solo una opción permanece marcada.
+- Revisión adicional de teclado: «Dejar para después» respeta su acción al pulsar Espacio/Enter, sin forzar la corrección ni exigir una respuesta. Se añadieron tres pruebas de regresión; el total es de 24 pruebas automatizadas.

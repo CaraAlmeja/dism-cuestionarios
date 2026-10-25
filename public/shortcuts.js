@@ -15,6 +15,15 @@ export function createQuizShortcuts({getContext,selectOption,check,next,isDialog
     const control=target?.closest('button,a,summary,label');
     const action=control?.dataset?.action;
     if(control&&!['answer','check','next'].includes(action))return;
+    if(action==='answer'&&['ArrowRight','ArrowDown','ArrowLeft','ArrowUp'].includes(key)) {
+      const index=Number(control.dataset.index);
+      if(!Number.isInteger(index)||index<0||index>3)return;
+      event.preventDefault();
+      if(event.repeat||context.submitted)return;
+      held.add(key);
+      invoke(()=>selectOption((index+(['ArrowRight','ArrowDown'].includes(key)?1:3))%4));
+      return;
+    }
     if(/^[1-4]$/.test(key)) {
       event.preventDefault();
       if(event.repeat)return;
@@ -22,11 +31,12 @@ export function createQuizShortcuts({getContext,selectOption,check,next,isDialog
     }
     if(key!=='Space'&&key!=='Enter')return;
     // Tab + Espacio/Enter sigue permitiendo elegir una opción sin seleccionar.
-    if(action==='answer'&&control.getAttribute('aria-pressed')!=='true')return;
+    if(action==='answer'&&control.getAttribute('aria-checked')!=='true')return;
     event.preventDefault();
     if(event.repeat)return;
     held.add(key);
-    if(context.mode==='study'&&!context.submitted) {
+    if(action==='next')invoke(next);
+    else if(context.mode==='study'&&!context.submitted) {
       if(context.hasAnswer)invoke(check);
     } else invoke(next);
   }

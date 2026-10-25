@@ -17,7 +17,7 @@ Web de estudio de Diseño e Infraestructura de Sistemas Multimedia para 3.º de 
 - Tema oscuro por defecto, selector claro/oscuro y elección guardada por navegador.
 - Navegación inferior en móvil, mapa del test plegable y controles de respuesta fijos.
 
-En el cuestionario, `1`–`4` eligen una respuesta. `Espacio` o `Enter` comprueban la selección en modo estudio; una nueva pulsación avanza después de corregir. En modo examen continúan sin mostrar la solución. Mantener una tecla no repite la acción. Al recorrer las opciones con `Tab`, Espacio/Enter siguen permitiendo seleccionar una opción todavía no marcada.
+En el cuestionario, `1`–`4` eligen una respuesta. `Espacio` o `Enter` comprueban la selección en modo estudio; una nueva pulsación avanza después de corregir. En modo examen continúan sin mostrar la solución. Mantener una tecla no repite la acción. `Tab` entra en el grupo de respuesta única y las flechas cambian la selección; Espacio/Enter también permiten elegir una opción todavía no marcada. Los botones explícitos, como «Dejar para después», conservan su acción con el teclado.
 
 ## Ejecutar
 

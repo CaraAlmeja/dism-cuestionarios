@@ -2,8 +2,8 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {createQuizShortcuts} from '../public/shortcuts.js';
 
-function target({action,selected=false,editable=false,other=false}={}) {
-  const control=action||other?{dataset:{action},getAttribute:()=>String(selected)}:null;
+function target({action,selected=false,editable=false,other=false,index=0}={}) {
+  const control=action||other?{dataset:{action,index:String(index)},getAttribute:()=>String(selected)}:null;
   return {closest:selector=>selector.startsWith('input,')?(editable?{}:null):control};
 }
 function event(key,options={}) {
@@ -76,4 +76,30 @@ test('las teclas 1–4 no repiten selecciones mientras se mantienen pulsadas',()
 test('perder el foco libera teclas para que la siguiente pulsación funcione',()=>{
   const {shortcuts,calls}=setup();shortcuts.keydown(event(' '));shortcuts.reset();shortcuts.keydown(event(' '));
   assert.deepEqual(calls,[['check'],['next']]);
+});
+test('flechas recorren las cuatro respuestas únicas, con vuelta al principio y sin corregir',()=>{
+  const {shortcuts,calls}=setup();
+  shortcuts.keydown(event('ArrowRight',{target:target({action:'answer',index:3})}));
+  shortcuts.keyup(event('ArrowRight'));
+  shortcuts.keydown(event('ArrowLeft',{target:target({action:'answer',index:0})}));
+  shortcuts.keyup(event('ArrowLeft'));
+  shortcuts.keydown(event('ArrowDown',{target:target({action:'answer',index:1})}));
+  shortcuts.keyup(event('ArrowDown'));
+  shortcuts.keydown(event('ArrowUp',{target:target({action:'answer',index:2})}));
+  assert.deepEqual(calls,[['select',0],['select',3],['select',2],['select',1]]);
+});
+test('las flechas no cambian una pregunta ya corregida ni controles ajenos al grupo',()=>{
+  const {shortcuts,calls}=setup({submitted:true});
+  shortcuts.keydown(event('ArrowRight',{target:target({action:'answer',index:1})}));
+  shortcuts.keydown(event('ArrowLeft',{target:target({other:true})}));
+  assert.deepEqual(calls,[]);
+});
+test('Espacio respeta Dejar para después sin comprobar ni necesitar una selección',()=>{
+  for(const hasAnswer of [false,true]) {
+    const {shortcuts,calls}=setup({hasAnswer});
+    const down=event(' ',{target:target({action:'next'})});
+    shortcuts.keydown(down);shortcuts.keydown(event(' ',{repeat:true,target:target({action:'next'})}));
+    shortcuts.keyup(event(' ',{target:target({action:'next'})}));
+    assert.ok(down.defaultPrevented);assert.deepEqual(calls,[['next']]);
+  }
 });
