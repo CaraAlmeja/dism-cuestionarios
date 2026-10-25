@@ -14,6 +14,10 @@ Web de estudio de Diseño e Infraestructura de Sistemas Multimedia para 3.º de 
 - Progreso en el navegador, exportable e importable en JSON.
 - Copias del alumno y solucionarios descargables en Markdown desde Guía y materiales.
 - Diseño adaptable a móviles, navegación con teclado y respeto a movimiento reducido.
+- Tema oscuro por defecto, selector claro/oscuro y elección guardada por navegador.
+- Navegación inferior en móvil, mapa del test plegable y controles de respuesta fijos.
+
+En el cuestionario, `1`–`4` eligen una respuesta. `Espacio` o `Enter` comprueban la selección en modo estudio; una nueva pulsación avanza después de corregir. En modo examen continúan sin mostrar la solución. Mantener una tecla no repite la acción. Al recorrer las opciones con `Tab`, Espacio/Enter siguen permitiendo seleccionar una opción todavía no marcada.
 
 ## Ejecutar
 

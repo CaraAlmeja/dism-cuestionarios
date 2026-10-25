@@ -22,3 +22,11 @@ Se recorrieron los siguientes flujos en el navegador de la app:
 - Consola del navegador: sin errores ni avisos de la aplicación durante estos recorridos.
 
 No se afirma que el banco esté validado psicométricamente. La revisión de contenido es editorial propia, con referencias y recálculo, documentada en `REVISION.md`.
+
+## Actualización: tema oscuro, móvil y teclado
+
+- Se añadieron nueve pruebas específicas de teclado, para un total de 21 pruebas satisfactorias. Cubren Espacio/Enter mantenidos, cambio de foco entre Comprobar y Siguiente, consumo del keyup, preguntas sin respuesta, modo examen, selección nativa con Tab, formularios/diálogos y liberación al perder el foco.
+- Prueba real en navegador: mantener Espacio durante 1,5 segundos corrigió una sola pregunta y dejó visible la explicación; otra pulsación avanzó exactamente una pregunta. En examen, mantener Espacio avanzó una pregunta sin mostrar la corrección.
+- Selector claro/oscuro comprobado en ambos sentidos. La elección se mantiene tras recargar; utiliza una clave independiente del progreso (`dism-lab:theme`).
+- Cuestionario revisado a 320×568, 375×812, 430×932, 667×375 y 768×1024: sin desbordamiento horizontal. En móvil los controles de respuesta quedan encima de la navegación inferior y el mapa se presenta plegado.
+- Guía, progreso y tarjetas revisados a 375 píxeles de ancho. Los nombres largos de los PDF ajustan su línea y las tarjetas se muestran en una columna en teléfonos pequeños.
