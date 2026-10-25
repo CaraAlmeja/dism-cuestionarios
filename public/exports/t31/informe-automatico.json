@@ -1,17 +1,15 @@
 {
-  "status": "requiere_revision",
+  "status": "sin_alertas_automaticas",
   "errors": [],
-  "warnings": [
-    "Racha de 4 claves C (4 opciones): revisar; puede ser azar legítimo."
-  ],
+  "warnings": [],
   "semantic_review": "No realizada por el script",
-  "question_count": 20,
+  "question_count": 32,
   "key_distribution": {
     "4": {
-      "A": 5,
-      "B": 5,
-      "C": 5,
-      "D": 5
+      "A": 8,
+      "B": 8,
+      "C": 8,
+      "D": 8
     }
   }
 }

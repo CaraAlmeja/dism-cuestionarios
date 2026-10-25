@@ -44,3 +44,12 @@ Se usaron puertos locales separados (4174 y 4175) para aislar los datos de prueb
 - Hallazgo corregido: en estudio se distingue ahora una opción «seleccionada, pendiente de comprobar» de una «corregida». El contador indica «comprobadas» y el texto explica cuándo cuenta una selección.
 - Hallazgo corregido: el grupo de respuesta única tiene semántica `radiogroup`/`radio`, un punto de entrada con Tab y cambio de selección mediante flechas. La comprobación en navegador confirmó que se anuncia como radio y que solo una opción permanece marcada.
 - Revisión adicional de teclado: «Dejar para después» respeta su acción al pulsar Espacio/Enter, sin forzar la corrección ni exigir una respuesta. Se añadieron tres pruebas de regresión; el total es de 24 pruebas automatizadas.
+
+## Actualización con la segunda guía
+
+- Banco de 135 preguntas: 39 añadidas y 4 retiradas. Se conserva la clave por ID de los 96 ítems vigentes de la primera versión y se mezclan los nuevos dentro de sus bloques.
+- Audit del JSON final y de los seis bloques: sin errores ni alertas automáticas. La revisión semántica propia incluyó soluciones, distractores, cálculos y contradicciones de las guías; el script no acredita esa parte.
+- 27 pruebas automatizadas satisfactorias. Las nuevas comprueban exclusiones, OpenAPI único, reparto mixto con T4 una sola vez y migración de sesiones con preguntas retiradas.
+- Recálculo de los ejercicios nuevos: reserva de búfer 8/(4−2)=4 s; unicast 100×8=800 Mbit/s frente a multicast 8 Mbit/s en el origen; texto ASCII de 100 puntos de código en UTF-8: 100 bytes.
+- Prueba en navegador: las tarjetas muestran bancos de 19, 33, 31, 32, 19 y 1 preguntas. T4 se completa con una única respuesta y muestra fuente web, resultado de 1/1 y progreso del 100 %. La guía presenta doce descargas de cuestionario/solucionario y la comparación de alcance.
+- La guía nueva se revisó a 390 px sin desbordamiento horizontal. Los controles existentes de teclado y mapa siguen pasando sus pruebas.

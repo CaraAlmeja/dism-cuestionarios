@@ -58,7 +58,7 @@ export function gradeSession(session,byId) {
   }
   return {correct,wrong,blank,total:session.items.length,percent:Math.round(correct/session.items.length*100)};
 }
-export function validateState(input, bank, {includeSessions=true}={}) {
+export function validateState(input, bank, {includeSessions=true,retiredIds=[]}={}) {
   if(!input || input.version!==1 || typeof input.stats!=='object' || input.stats===null || Array.isArray(input.stats)) throw new Error('Formato de progreso no compatible');
   const result=emptyState();
   const byId=Object.fromEntries(bank.map(q=>[q.id,q]));
@@ -80,7 +80,23 @@ export function validateState(input, bank, {includeSessions=true}={}) {
     if([...s.submitted,...s.recorded].some(id=>!ids.has(id)||!s.answers[id]) || new Set(s.submitted).size!==s.submitted.length || new Set(s.recorded).size!==s.recorded.length)return false;
     return true;
   }
-  if(includeSessions && validSession(input.active)) result.active=input.active;
-  if(includeSessions && validSession(input.lastResult)) result.lastResult=input.lastResult;
+  function migrateSession(session) {
+    if(!session||!Array.isArray(session.items)||!session.answers||!Array.isArray(session.submitted)||!Array.isArray(session.recorded))return session;
+    const retired=new Set(retiredIds);
+    if(!session.items.some(item=>retired.has(item.id)))return session;
+    const items=session.items.filter(item=>!retired.has(item.id));
+    if(!items.length)return null;
+    const currentId=session.items[session.index]?.id;
+    const currentIndex=items.findIndex(item=>item.id===currentId);
+    const ids=new Set(items.map(item=>item.id));
+    return {...session,items,index:currentIndex>=0?currentIndex:Math.min(Math.max(session.index,0),items.length-1),
+      answers:Object.fromEntries(Object.entries(session.answers).filter(([id])=>ids.has(id))),
+      submitted:session.submitted.filter(id=>ids.has(id)),recorded:session.recorded.filter(id=>ids.has(id))};
+  }
+  if(includeSessions) {
+    const active=migrateSession(input.active),lastResult=migrateSession(input.lastResult);
+    if(validSession(active))result.active=active;
+    if(validSession(lastResult))result.lastResult=lastResult;
+  }
   return result;
 }

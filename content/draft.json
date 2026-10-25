@@ -1,7 +1,14 @@
 {
   "title": "DISM · Banco de estudio",
-  "expected_questions": 100,
+  "expected_questions": 135,
   "options_per_question": 4,
+  "guide_version": "repaso-2",
+  "retired_question_ids": [
+    "t1-12",
+    "t1-14",
+    "t31-17",
+    "t32-01"
+  ],
   "blocks": [
     {
       "id": "t1",
@@ -42,6 +49,14 @@
       "subtitle": "Celdas, traspasos y tráfico",
       "icon": "signal",
       "color": "green"
+    },
+    {
+      "id": "t4",
+      "code": "T4",
+      "title": "OpenAPI",
+      "subtitle": "Una única pregunta: qué es OpenAPI",
+      "icon": "book",
+      "color": "blue"
     }
   ],
   "questions": [
@@ -80,6 +95,7 @@
       "source": "Tema1DISM_Desarrollo_de_aplicaciones_multiplataforma.pdf, páginas PDF 13–16.",
       "source_file": "Tema1DISM_Desarrollo_de_aplicaciones_multiplataforma.pdf",
       "source_pages": "13–16",
+      "source_type": "pdf",
       "reference_url": null,
       "shuffle_options": true
     },
@@ -118,6 +134,7 @@
       "source": "Tema1DISM_Desarrollo_de_aplicaciones_multiplataforma.pdf, páginas PDF 16, 57.",
       "source_file": "Tema1DISM_Desarrollo_de_aplicaciones_multiplataforma.pdf",
       "source_pages": "16, 57",
+      "source_type": "pdf",
       "reference_url": null,
       "shuffle_options": true
     },
@@ -156,6 +173,7 @@
       "source": "Tema1DISM_Desarrollo_de_aplicaciones_multiplataforma.pdf, páginas PDF 13–14.",
       "source_file": "Tema1DISM_Desarrollo_de_aplicaciones_multiplataforma.pdf",
       "source_pages": "13–14",
+      "source_type": "pdf",
       "reference_url": null,
       "shuffle_options": true
     },
@@ -194,6 +212,7 @@
       "source": "Tema1DISM_Desarrollo_de_aplicaciones_multiplataforma.pdf, páginas PDF 15, 41.",
       "source_file": "Tema1DISM_Desarrollo_de_aplicaciones_multiplataforma.pdf",
       "source_pages": "15, 41",
+      "source_type": "pdf",
       "reference_url": null,
       "shuffle_options": true
     },
@@ -215,7 +234,7 @@
         },
         {
           "id": "o3",
-          "text": "Dart y Android Studio como SDK exclusivo de Apple"
+          "text": "C# y Android Studio como entorno específico de Apple"
         },
         {
           "id": "o4",
@@ -226,12 +245,13 @@
       "explanation": "Para iOS, el tema sitúa Swift (y el histórico Objective-C) junto a Xcode. Para Android, sitúa Kotlin y Android Studio.",
       "distractor_rationales": {
         "o2": "Esta pareja corresponde a Android.",
-        "o3": "Dart se asocia con Flutter; no es el lenguaje específico de iOS.",
+        "o3": "Android Studio es el entorno de Android; para el desarrollo iOS del caso se usa Swift con Xcode.",
         "o4": "Cordova usa tecnologías web y C# se asocia con el ecosistema .NET."
       },
       "source": "Tema1DISM_Desarrollo_de_aplicaciones_multiplataforma.pdf, páginas PDF 8, 12.",
       "source_file": "Tema1DISM_Desarrollo_de_aplicaciones_multiplataforma.pdf",
       "source_pages": "8, 12",
+      "source_type": "pdf",
       "reference_url": null,
       "shuffle_options": true
     },
@@ -253,7 +273,7 @@
         },
         {
           "id": "o3",
-          "text": "Un SDK de Google cuyo lenguaje principal es Dart"
+          "text": "Un entorno exclusivo para escribir apps iOS con Swift"
         },
         {
           "id": "o4",
@@ -264,12 +284,13 @@
       "explanation": "Xamarin permitió reutilizar C# en aplicaciones móviles nativas. El material lo presenta como antecedente histórico de .NET MAUI, no como una recomendación de soporte actual.",
       "distractor_rationales": {
         "o2": "Xamarin pertenece a .NET y utiliza C#, no solo tecnologías web.",
-        "o3": "Esta descripción corresponde a Flutter.",
+        "o3": "Xamarin permite compartir C# entre plataformas, no es un entorno exclusivo de Swift.",
         "o4": "Esta descripción corresponde a Kotlin Multiplatform."
       },
       "source": "Tema1DISM_Desarrollo_de_aplicaciones_multiplataforma.pdf, páginas PDF 18–19, 24.",
       "source_file": "Tema1DISM_Desarrollo_de_aplicaciones_multiplataforma.pdf",
       "source_pages": "18–19, 24",
+      "source_type": "pdf",
       "reference_url": null,
       "shuffle_options": true
     },
@@ -287,7 +308,7 @@
         },
         {
           "id": "o2",
-          "text": "Compilar Dart para dibujar interfaces con widgets"
+          "text": "Desplegar servicios backend HTTP sin interfaz móvil"
         },
         {
           "id": "o3",
@@ -301,13 +322,14 @@
       "correct_option_id": "o1",
       "explanation": "Cordova permite usar HTML, CSS y JavaScript en una app empaquetada y ofrece plugins para cámara, GPS y otras capacidades. La interfaz continúa siendo web.",
       "distractor_rationales": {
-        "o2": "Esta función corresponde al enfoque de Flutter.",
+        "o2": "Cordova se ocupa de aplicaciones móviles web empaquetadas y su acceso al dispositivo, no de alojar servicios backend.",
         "o3": "Ese objetivo se asocia con Kotlin Multiplatform.",
         "o4": "Esa combinación se asocia con MAUI o Xamarin.Forms."
       },
       "source": "Tema1DISM_Desarrollo_de_aplicaciones_multiplataforma.pdf, páginas PDF 26–30.",
       "source_file": "Tema1DISM_Desarrollo_de_aplicaciones_multiplataforma.pdf",
       "source_pages": "26–30",
+      "source_type": "pdf",
       "reference_url": null,
       "shuffle_options": true
     },
@@ -329,7 +351,7 @@
         },
         {
           "id": "o3",
-          "text": "Un SDK que obliga a escribir todas las vistas en Dart"
+          "text": "Un servicio de compilación exclusivo para proyectos Swift de iOS"
         },
         {
           "id": "o4",
@@ -340,12 +362,13 @@
       "explanation": "Ionic facilita aplicaciones con tecnologías web y componentes adaptados visualmente a cada plataforma. Puede trabajar con Angular, React o Vue.",
       "distractor_rationales": {
         "o2": "Ionic es un framework; no un nuevo lenguaje de programación.",
-        "o3": "Dart es el lenguaje de Flutter, no un requisito de Ionic.",
+        "o3": "Ionic es un framework multiplataforma de tecnologías web, no un servicio exclusivo de Swift.",
         "o4": "Ionic permite distintos destinos y no es una herramienta exclusiva de Apple."
       },
       "source": "Tema1DISM_Desarrollo_de_aplicaciones_multiplataforma.pdf, páginas PDF 33, 37, 39.",
       "source_file": "Tema1DISM_Desarrollo_de_aplicaciones_multiplataforma.pdf",
       "source_pages": "33, 37, 39",
+      "source_type": "pdf",
       "reference_url": null,
       "shuffle_options": true
     },
@@ -363,11 +386,11 @@
         },
         {
           "id": "o2",
-          "text": "Sustituir JavaScript por el lenguaje Dart"
+          "text": "Sustituir la WebView por controles nativos de interfaz"
         },
         {
           "id": "o3",
-          "text": "Transformar toda la interfaz en controles XAML"
+          "text": "Subir las fotografías al servidor de la aplicación"
         },
         {
           "id": "o4",
@@ -377,13 +400,14 @@
       "correct_option_id": "o1",
       "explanation": "Capacitor conecta el código web con capacidades del dispositivo mediante plugins. La apariencia similar a la del sistema no implica que la interfaz deje de ser web.",
       "distractor_rationales": {
-        "o2": "Capacitor no convierte la app en Flutter.",
-        "o3": "XAML pertenece a .NET y no es la función de Capacitor.",
+        "o2": "Capacitor facilita acceso a APIs nativas pero mantiene la interfaz web en una WebView.",
+        "o3": "La subida depende de la lógica y servicios de la app; el papel del plugin es integrar la cámara.",
         "o4": "El sistema de estilos no proporciona la integración nativa que necesita la cámara."
       },
       "source": "Tema1DISM_Desarrollo_de_aplicaciones_multiplataforma.pdf, páginas PDF 34–37.",
       "source_file": "Tema1DISM_Desarrollo_de_aplicaciones_multiplataforma.pdf",
       "source_pages": "34–37",
+      "source_type": "pdf",
       "reference_url": null,
       "shuffle_options": true
     },
@@ -422,6 +446,7 @@
       "source": "Tema1DISM_Desarrollo_de_aplicaciones_multiplataforma.pdf, páginas PDF 38.",
       "source_file": "Tema1DISM_Desarrollo_de_aplicaciones_multiplataforma.pdf",
       "source_pages": "38",
+      "source_type": "pdf",
       "reference_url": null,
       "shuffle_options": true
     },
@@ -460,44 +485,7 @@
       "source": "Tema1DISM_Desarrollo_de_aplicaciones_multiplataforma.pdf, páginas PDF 42–44.",
       "source_file": "Tema1DISM_Desarrollo_de_aplicaciones_multiplataforma.pdf",
       "source_pages": "42–44",
-      "reference_url": null,
-      "shuffle_options": true
-    },
-    {
-      "id": "t1-12",
-      "block": "t1",
-      "tag": "Funcionamiento sin conexión",
-      "objective": "Funcionamiento sin conexión",
-      "level": "Aplicación",
-      "stem": "Una PWA quiere abrir los recursos de estudio ya descargados cuando no hay conexión. ¿Qué mecanismo del tema lo hace posible?",
-      "options": [
-        {
-          "id": "o1",
-          "text": "Un service worker con una estrategia de caché"
-        },
-        {
-          "id": "o2",
-          "text": "Un manifiesto que convierte automáticamente la web en código Swift"
-        },
-        {
-          "id": "o3",
-          "text": "Una suscripción a la tienda de aplicaciones"
-        },
-        {
-          "id": "o4",
-          "text": "Una hoja de estilos con diseño adaptable"
-        }
-      ],
-      "correct_option_id": "o1",
-      "explanation": "El service worker permite gestionar peticiones y recursos en caché. Para abrir contenido sin conexión, ese contenido debe haberse guardado previamente.",
-      "distractor_rationales": {
-        "o2": "El manifiesto describe la app; no compila Swift ni guarda por sí solo los recursos.",
-        "o3": "La suscripción no proporciona el almacenamiento de recursos web.",
-        "o4": "CSS adapta la presentación; no intercepta peticiones ni proporciona caché programable."
-      },
-      "source": "Tema1DISM_Desarrollo_de_aplicaciones_multiplataforma.pdf, páginas PDF 43–44.",
-      "source_file": "Tema1DISM_Desarrollo_de_aplicaciones_multiplataforma.pdf",
-      "source_pages": "43–44",
+      "source_type": "pdf",
       "reference_url": null,
       "shuffle_options": true
     },
@@ -523,7 +511,7 @@
         },
         {
           "id": "o4",
-          "text": "Un compilador de Dart mantenido por Google"
+          "text": "Un conjunto de plugins JavaScript para aplicaciones híbridas"
         }
       ],
       "correct_option_id": "o1",
@@ -531,49 +519,12 @@
       "distractor_rationales": {
         "o2": "MAUI es una herramienta de desarrollo de aplicaciones, no un protocolo o reproductor.",
         "o3": "El enfoque nativo de MAUI utiliza C# y XAML; HTML no es obligatorio.",
-        "o4": "Esa asociación corresponde al ecosistema Flutter, no a MAUI."
+        "o4": "Esa descripción encaja con integraciones híbridas como Cordova, no con el framework C#/XAML de MAUI."
       },
       "source": "Tema1DISM_Desarrollo_de_aplicaciones_multiplataforma.pdf, páginas PDF 48–49.",
       "source_file": "Tema1DISM_Desarrollo_de_aplicaciones_multiplataforma.pdf",
       "source_pages": "48–49",
-      "reference_url": null,
-      "shuffle_options": true
-    },
-    {
-      "id": "t1-14",
-      "block": "t1",
-      "tag": "Flutter",
-      "objective": "Flutter",
-      "level": "Comprensión",
-      "stem": "¿Qué combinación identifica a Flutter en el temario?",
-      "options": [
-        {
-          "id": "o1",
-          "text": "SDK de Google y lenguaje Dart"
-        },
-        {
-          "id": "o2",
-          "text": "Framework de Microsoft y lenguaje C#"
-        },
-        {
-          "id": "o3",
-          "text": "Tecnología de JetBrains y lenguaje Kotlin"
-        },
-        {
-          "id": "o4",
-          "text": "Framework de Meta y lenguaje JavaScript"
-        }
-      ],
-      "correct_option_id": "o1",
-      "explanation": "Flutter es el SDK multiplataforma de Google cuyo lenguaje de desarrollo es Dart. Permite crear apps para móvil, web y escritorio.",
-      "distractor_rationales": {
-        "o2": "Esta combinación se relaciona con .NET MAUI.",
-        "o3": "Esta combinación se relaciona con Kotlin Multiplatform.",
-        "o4": "Esta combinación se relaciona con React Native."
-      },
-      "source": "Tema1DISM_Desarrollo_de_aplicaciones_multiplataforma.pdf, páginas PDF 53–54.",
-      "source_file": "Tema1DISM_Desarrollo_de_aplicaciones_multiplataforma.pdf",
-      "source_pages": "53–54",
+      "source_type": "pdf",
       "reference_url": null,
       "shuffle_options": true
     },
@@ -595,7 +546,7 @@
         },
         {
           "id": "o3",
-          "text": "Flutter"
+          "text": "Ionic"
         },
         {
           "id": "o4",
@@ -606,12 +557,13 @@
       "explanation": "React Native combina el modelo de React con componentes nativos para las plataformas móviles. Es la opción alineada con el conocimiento y el resultado solicitados.",
       "distractor_rationales": {
         "o2": "Cordova ofrece el enfoque de app web empaquetada, no la interfaz nativa solicitada.",
-        "o3": "Flutter utiliza Dart; no es la opción que reutiliza directamente React.",
+        "o3": "Ionic puede utilizar React, pero presenta su interfaz web en una WebView, frente a la interfaz nativa solicitada.",
         "o4": "MAUI se centra en C# y XAML, no en React con JS/TS."
       },
       "source": "Tema1DISM_Desarrollo_de_aplicaciones_multiplataforma.pdf, páginas PDF 57.",
       "source_file": "Tema1DISM_Desarrollo_de_aplicaciones_multiplataforma.pdf",
       "source_pages": "57",
+      "source_type": "pdf",
       "reference_url": null,
       "shuffle_options": true
     },
@@ -637,7 +589,7 @@
         },
         {
           "id": "o4",
-          "text": "Flutter con widgets Dart"
+          "text": "MAUI con controles escritos en XAML"
         }
       ],
       "correct_option_id": "o1",
@@ -645,11 +597,12 @@
       "distractor_rationales": {
         "o2": "Ionic prioriza la interfaz web; no el objetivo de lógica común en Kotlin indicado.",
         "o3": "Cordova no es la tecnología de compartición de lógica Kotlin descrita.",
-        "o4": "Flutter propone Dart y una interfaz con sus widgets, que no es el requisito dado."
+        "o4": "MAUI trabaja con C# y XAML; no es la tecnología de compartición de lógica Kotlin del caso."
       },
       "source": "Tema1DISM_Desarrollo_de_aplicaciones_multiplataforma.pdf, páginas PDF 60–61.",
       "source_file": "Tema1DISM_Desarrollo_de_aplicaciones_multiplataforma.pdf",
       "source_pages": "60–61",
+      "source_type": "pdf",
       "reference_url": null,
       "shuffle_options": true
     },
@@ -667,7 +620,7 @@
         },
         {
           "id": "o2",
-          "text": "Flutter"
+          "text": "Ionic"
         },
         {
           "id": "o3",
@@ -681,13 +634,14 @@
       "correct_option_id": "o1",
       "explanation": "Tauri utiliza tecnologías web para la interfaz y Rust para el núcleo nativo. El tema destaca que aprovecha la WebView del sistema en lugar de empaquetar un navegador completo.",
       "distractor_rationales": {
-        "o2": "Flutter utiliza Dart y su propio sistema de interfaz.",
+        "o2": "Ionic también usa tecnologías web, pero no se define por el núcleo Rust descrito.",
         "o3": "Xamarin utiliza C# y el ecosistema .NET.",
         "o4": "KMP comparte código Kotlin; no se define por un núcleo Rust."
       },
       "source": "Tema1DISM_Desarrollo_de_aplicaciones_multiplataforma.pdf, páginas PDF 64.",
       "source_file": "Tema1DISM_Desarrollo_de_aplicaciones_multiplataforma.pdf",
       "source_pages": "64",
+      "source_type": "pdf",
       "reference_url": null,
       "shuffle_options": true
     },
@@ -726,6 +680,7 @@
       "source": "Tema1DISM_Desarrollo_de_aplicaciones_multiplataforma.pdf, páginas PDF 52, 69.",
       "source_file": "Tema1DISM_Desarrollo_de_aplicaciones_multiplataforma.pdf",
       "source_pages": "52, 69",
+      "source_type": "pdf",
       "reference_url": null,
       "shuffle_options": true
     },
@@ -764,6 +719,7 @@
       "source": "Tema1DISM_Desarrollo_de_aplicaciones_multiplataforma.pdf, páginas PDF 3, 11–15.",
       "source_file": "Tema1DISM_Desarrollo_de_aplicaciones_multiplataforma.pdf",
       "source_pages": "3, 11–15",
+      "source_type": "pdf",
       "reference_url": null,
       "shuffle_options": true
     },
@@ -802,6 +758,7 @@
       "source": "Tema1DISM_Desarrollo_de_aplicaciones_multiplataforma.pdf, páginas PDF 11–12, 70.",
       "source_file": "Tema1DISM_Desarrollo_de_aplicaciones_multiplataforma.pdf",
       "source_pages": "11–12, 70",
+      "source_type": "pdf",
       "reference_url": null,
       "shuffle_options": true
     },
@@ -840,6 +797,7 @@
       "source": "Tema2-DISM-1.pdf, páginas PDF 4–5.",
       "source_file": "Tema2-DISM-1.pdf",
       "source_pages": "4–5",
+      "source_type": "pdf",
       "reference_url": null,
       "shuffle_options": true
     },
@@ -878,6 +836,7 @@
       "source": "Tema2-DISM-1.pdf, páginas PDF 14.",
       "source_file": "Tema2-DISM-1.pdf",
       "source_pages": "14",
+      "source_type": "pdf",
       "reference_url": null,
       "shuffle_options": true
     },
@@ -916,6 +875,7 @@
       "source": "Tema2-DISM-1.pdf, páginas PDF 16–18.",
       "source_file": "Tema2-DISM-1.pdf",
       "source_pages": "16–18",
+      "source_type": "pdf",
       "reference_url": null,
       "shuffle_options": true
     },
@@ -954,6 +914,7 @@
       "source": "Tema2-DISM-1.pdf, páginas PDF 21–27.",
       "source_file": "Tema2-DISM-1.pdf",
       "source_pages": "21–27",
+      "source_type": "pdf",
       "reference_url": null,
       "shuffle_options": true
     },
@@ -992,6 +953,7 @@
       "source": "Tema2-DISM-1.pdf, páginas PDF 25.",
       "source_file": "Tema2-DISM-1.pdf",
       "source_pages": "25",
+      "source_type": "pdf",
       "reference_url": null,
       "shuffle_options": true
     },
@@ -1030,6 +992,7 @@
       "source": "Tema2-DISM-1.pdf, páginas PDF 27–28.",
       "source_file": "Tema2-DISM-1.pdf",
       "source_pages": "27–28",
+      "source_type": "pdf",
       "reference_url": null,
       "shuffle_options": true
     },
@@ -1068,6 +1031,7 @@
       "source": "Tema2-DISM-1.pdf, páginas PDF 29.",
       "source_file": "Tema2-DISM-1.pdf",
       "source_pages": "29",
+      "source_type": "pdf",
       "reference_url": null,
       "shuffle_options": true
     },
@@ -1106,6 +1070,7 @@
       "source": "Tema2-DISM-1.pdf, páginas PDF 30.",
       "source_file": "Tema2-DISM-1.pdf",
       "source_pages": "30",
+      "source_type": "pdf",
       "reference_url": null,
       "shuffle_options": true
     },
@@ -1144,6 +1109,7 @@
       "source": "Tema2-DISM-1.pdf, páginas PDF 31.",
       "source_file": "Tema2-DISM-1.pdf",
       "source_pages": "31",
+      "source_type": "pdf",
       "reference_url": null,
       "shuffle_options": true
     },
@@ -1182,6 +1148,7 @@
       "source": "Tema2-DISM-1.pdf, páginas PDF 42–43.",
       "source_file": "Tema2-DISM-1.pdf",
       "source_pages": "42–43",
+      "source_type": "pdf",
       "reference_url": null,
       "shuffle_options": true
     },
@@ -1220,6 +1187,7 @@
       "source": "Tema2-DISM-1.pdf, páginas PDF 43–44.",
       "source_file": "Tema2-DISM-1.pdf",
       "source_pages": "43–44",
+      "source_type": "pdf",
       "reference_url": null,
       "shuffle_options": true
     },
@@ -1258,6 +1226,7 @@
       "source": "Tema2-DISM-1.pdf, páginas PDF 46–47.",
       "source_file": "Tema2-DISM-1.pdf",
       "source_pages": "46–47",
+      "source_type": "pdf",
       "reference_url": null,
       "shuffle_options": true
     },
@@ -1296,6 +1265,7 @@
       "source": "Tema2-DISM-1.pdf, páginas PDF 45.",
       "source_file": "Tema2-DISM-1.pdf",
       "source_pages": "45",
+      "source_type": "pdf",
       "reference_url": null,
       "shuffle_options": true
     },
@@ -1334,6 +1304,7 @@
       "source": "Tema2-DISM-1.pdf, páginas PDF 48–49.",
       "source_file": "Tema2-DISM-1.pdf",
       "source_pages": "48–49",
+      "source_type": "pdf",
       "reference_url": null,
       "shuffle_options": true
     },
@@ -1372,6 +1343,7 @@
       "source": "Tema2-DISM-1.pdf, páginas PDF 39, 48–49.",
       "source_file": "Tema2-DISM-1.pdf",
       "source_pages": "39, 48–49",
+      "source_type": "pdf",
       "reference_url": null,
       "shuffle_options": true
     },
@@ -1410,6 +1382,7 @@
       "source": "Tema2-DISM-1.pdf, páginas PDF 53.",
       "source_file": "Tema2-DISM-1.pdf",
       "source_pages": "53",
+      "source_type": "pdf",
       "reference_url": null,
       "shuffle_options": true
     },
@@ -1448,6 +1421,7 @@
       "source": "Tema2-DISM-1.pdf, páginas PDF 52–53.",
       "source_file": "Tema2-DISM-1.pdf",
       "source_pages": "52–53",
+      "source_type": "pdf",
       "reference_url": null,
       "shuffle_options": true
     },
@@ -1486,6 +1460,7 @@
       "source": "Tema2-DISM-1.pdf, páginas PDF 52.",
       "source_file": "Tema2-DISM-1.pdf",
       "source_pages": "52",
+      "source_type": "pdf",
       "reference_url": null,
       "shuffle_options": true
     },
@@ -1524,6 +1499,7 @@
       "source": "Tema2-DISM-1.pdf, páginas PDF 54–55.",
       "source_file": "Tema2-DISM-1.pdf",
       "source_pages": "54–55",
+      "source_type": "pdf",
       "reference_url": null,
       "shuffle_options": true
     },
@@ -1562,6 +1538,7 @@
       "source": "Tema2-DISM-1.pdf, páginas PDF 57–59, 64. Contraste: https://openconnect.netflix.com/en/",
       "source_file": "Tema2-DISM-1.pdf",
       "source_pages": "57–59, 64",
+      "source_type": "pdf",
       "reference_url": "https://openconnect.netflix.com/en/",
       "shuffle_options": true
     },
@@ -1600,6 +1577,7 @@
       "source": "Tema2-DISM-2.pdf, páginas PDF 5.",
       "source_file": "Tema2-DISM-2.pdf",
       "source_pages": "5",
+      "source_type": "pdf",
       "reference_url": null,
       "shuffle_options": true
     },
@@ -1638,6 +1616,7 @@
       "source": "Tema2-DISM-2.pdf, páginas PDF 6.",
       "source_file": "Tema2-DISM-2.pdf",
       "source_pages": "6",
+      "source_type": "pdf",
       "reference_url": null,
       "shuffle_options": false
     },
@@ -1676,6 +1655,7 @@
       "source": "Tema2-DISM-2.pdf, páginas PDF 7–9.",
       "source_file": "Tema2-DISM-2.pdf",
       "source_pages": "7–9",
+      "source_type": "pdf",
       "reference_url": null,
       "shuffle_options": false
     },
@@ -1714,6 +1694,7 @@
       "source": "Tema2-DISM-2.pdf, páginas PDF 7–9.",
       "source_file": "Tema2-DISM-2.pdf",
       "source_pages": "7–9",
+      "source_type": "pdf",
       "reference_url": null,
       "shuffle_options": true
     },
@@ -1752,6 +1733,7 @@
       "source": "Tema2-DISM-2.pdf, páginas PDF 9, 13.",
       "source_file": "Tema2-DISM-2.pdf",
       "source_pages": "9, 13",
+      "source_type": "pdf",
       "reference_url": null,
       "shuffle_options": false
     },
@@ -1790,6 +1772,7 @@
       "source": "Tema2-DISM-2.pdf, páginas PDF 9, 13.",
       "source_file": "Tema2-DISM-2.pdf",
       "source_pages": "9, 13",
+      "source_type": "pdf",
       "reference_url": null,
       "shuffle_options": false
     },
@@ -1828,6 +1811,7 @@
       "source": "Tema2-DISM-2.pdf, páginas PDF 10–13.",
       "source_file": "Tema2-DISM-2.pdf",
       "source_pages": "10–13",
+      "source_type": "pdf",
       "reference_url": null,
       "shuffle_options": false
     },
@@ -1866,6 +1850,7 @@
       "source": "Tema2-DISM-2.pdf, páginas PDF 10–11.",
       "source_file": "Tema2-DISM-2.pdf",
       "source_pages": "10–11",
+      "source_type": "pdf",
       "reference_url": null,
       "shuffle_options": true
     },
@@ -1904,6 +1889,7 @@
       "source": "Tema2-DISM-2.pdf, páginas PDF 10.",
       "source_file": "Tema2-DISM-2.pdf",
       "source_pages": "10",
+      "source_type": "pdf",
       "reference_url": null,
       "shuffle_options": true
     },
@@ -1942,6 +1928,7 @@
       "source": "Tema2-DISM-2.pdf, páginas PDF 8, 14–15.",
       "source_file": "Tema2-DISM-2.pdf",
       "source_pages": "8, 14–15",
+      "source_type": "pdf",
       "reference_url": null,
       "shuffle_options": true
     },
@@ -1980,6 +1967,7 @@
       "source": "Tema2-DISM-2.pdf, páginas PDF 19.",
       "source_file": "Tema2-DISM-2.pdf",
       "source_pages": "19",
+      "source_type": "pdf",
       "reference_url": null,
       "shuffle_options": true
     },
@@ -2018,6 +2006,7 @@
       "source": "Tema2-DISM-2.pdf, páginas PDF 23, 25.",
       "source_file": "Tema2-DISM-2.pdf",
       "source_pages": "23, 25",
+      "source_type": "pdf",
       "reference_url": null,
       "shuffle_options": true
     },
@@ -2056,6 +2045,7 @@
       "source": "Tema2-DISM-2.pdf, páginas PDF 30.",
       "source_file": "Tema2-DISM-2.pdf",
       "source_pages": "30",
+      "source_type": "pdf",
       "reference_url": null,
       "shuffle_options": false
     },
@@ -2094,6 +2084,7 @@
       "source": "Tema2-DISM-2.pdf, páginas PDF 32.",
       "source_file": "Tema2-DISM-2.pdf",
       "source_pages": "32",
+      "source_type": "pdf",
       "reference_url": null,
       "shuffle_options": true
     },
@@ -2132,6 +2123,7 @@
       "source": "Tema2-DISM-2.pdf, páginas PDF 34–36.",
       "source_file": "Tema2-DISM-2.pdf",
       "source_pages": "34–36",
+      "source_type": "pdf",
       "reference_url": null,
       "shuffle_options": true
     },
@@ -2170,6 +2162,7 @@
       "source": "Tema2-DISM-2.pdf, páginas PDF 45.",
       "source_file": "Tema2-DISM-2.pdf",
       "source_pages": "45",
+      "source_type": "pdf",
       "reference_url": null,
       "shuffle_options": true
     },
@@ -2208,6 +2201,7 @@
       "source": "Tema2-DISM-2.pdf, páginas PDF 45–46.",
       "source_file": "Tema2-DISM-2.pdf",
       "source_pages": "45–46",
+      "source_type": "pdf",
       "reference_url": null,
       "shuffle_options": true
     },
@@ -2246,6 +2240,7 @@
       "source": "Tema2-DISM-2.pdf, páginas PDF 61–63.",
       "source_file": "Tema2-DISM-2.pdf",
       "source_pages": "61–63",
+      "source_type": "pdf",
       "reference_url": null,
       "shuffle_options": true
     },
@@ -2284,6 +2279,7 @@
       "source": "Tema2-DISM-2.pdf, páginas PDF 52–53, 57.",
       "source_file": "Tema2-DISM-2.pdf",
       "source_pages": "52–53, 57",
+      "source_type": "pdf",
       "reference_url": null,
       "shuffle_options": true
     },
@@ -2322,6 +2318,7 @@
       "source": "Tema2-DISM-2.pdf, páginas PDF 47, 59–63.",
       "source_file": "Tema2-DISM-2.pdf",
       "source_pages": "47, 59–63",
+      "source_type": "pdf",
       "reference_url": null,
       "shuffle_options": true
     },
@@ -2360,6 +2357,7 @@
       "source": "Tema3-DISM-1.pdf, páginas PDF 23–26.",
       "source_file": "Tema3-DISM-1.pdf",
       "source_pages": "23–26",
+      "source_type": "pdf",
       "reference_url": null,
       "shuffle_options": true
     },
@@ -2398,6 +2396,7 @@
       "source": "Tema3-DISM-1.pdf, páginas PDF 36–37.",
       "source_file": "Tema3-DISM-1.pdf",
       "source_pages": "36–37",
+      "source_type": "pdf",
       "reference_url": null,
       "shuffle_options": true
     },
@@ -2436,6 +2435,7 @@
       "source": "Tema3-DISM-1.pdf, páginas PDF 26, 67, 71.",
       "source_file": "Tema3-DISM-1.pdf",
       "source_pages": "26, 67, 71",
+      "source_type": "pdf",
       "reference_url": null,
       "shuffle_options": true
     },
@@ -2474,6 +2474,7 @@
       "source": "Tema3-DISM-1.pdf, páginas PDF 42–44.",
       "source_file": "Tema3-DISM-1.pdf",
       "source_pages": "42–44",
+      "source_type": "pdf",
       "reference_url": null,
       "shuffle_options": true
     },
@@ -2512,6 +2513,7 @@
       "source": "Tema3-DISM-1.pdf, páginas PDF 45–48.",
       "source_file": "Tema3-DISM-1.pdf",
       "source_pages": "45–48",
+      "source_type": "pdf",
       "reference_url": null,
       "shuffle_options": true
     },
@@ -2550,6 +2552,7 @@
       "source": "Tema3-DISM-1.pdf, páginas PDF 55–56.",
       "source_file": "Tema3-DISM-1.pdf",
       "source_pages": "55–56",
+      "source_type": "pdf",
       "reference_url": null,
       "shuffle_options": true
     },
@@ -2588,6 +2591,7 @@
       "source": "Tema3-DISM-1.pdf, páginas PDF 55, 57–58.",
       "source_file": "Tema3-DISM-1.pdf",
       "source_pages": "55, 57–58",
+      "source_type": "pdf",
       "reference_url": null,
       "shuffle_options": true
     },
@@ -2626,6 +2630,7 @@
       "source": "Tema3-DISM-1.pdf, páginas PDF 59–60.",
       "source_file": "Tema3-DISM-1.pdf",
       "source_pages": "59–60",
+      "source_type": "pdf",
       "reference_url": null,
       "shuffle_options": true
     },
@@ -2664,6 +2669,7 @@
       "source": "Tema3-DISM-1.pdf, páginas PDF 61–63.",
       "source_file": "Tema3-DISM-1.pdf",
       "source_pages": "61–63",
+      "source_type": "pdf",
       "reference_url": null,
       "shuffle_options": true
     },
@@ -2702,6 +2708,7 @@
       "source": "Tema3-DISM-1.pdf, páginas PDF 67–68.",
       "source_file": "Tema3-DISM-1.pdf",
       "source_pages": "67–68",
+      "source_type": "pdf",
       "reference_url": null,
       "shuffle_options": true
     },
@@ -2740,6 +2747,7 @@
       "source": "Tema3-DISM-1.pdf, páginas PDF 71–72.",
       "source_file": "Tema3-DISM-1.pdf",
       "source_pages": "71–72",
+      "source_type": "pdf",
       "reference_url": null,
       "shuffle_options": true
     },
@@ -2778,6 +2786,7 @@
       "source": "Tema3-DISM-1.pdf, páginas PDF 69–70.",
       "source_file": "Tema3-DISM-1.pdf",
       "source_pages": "69–70",
+      "source_type": "pdf",
       "reference_url": null,
       "shuffle_options": true
     },
@@ -2816,6 +2825,7 @@
       "source": "Tema3-DISM-1.pdf, páginas PDF 76–77. Contraste: https://www.bluetooth.com/learn-about-bluetooth/tech-overview/",
       "source_file": "Tema3-DISM-1.pdf",
       "source_pages": "76–77",
+      "source_type": "pdf",
       "reference_url": "https://www.bluetooth.com/learn-about-bluetooth/tech-overview/",
       "shuffle_options": true
     },
@@ -2854,6 +2864,7 @@
       "source": "Tema3-DISM-1.pdf, páginas PDF 83–85. Contraste: https://developer.garmin.com/ant-program/ant-ant-plus/",
       "source_file": "Tema3-DISM-1.pdf",
       "source_pages": "83–85",
+      "source_type": "pdf",
       "reference_url": "https://developer.garmin.com/ant-program/ant-ant-plus/",
       "shuffle_options": true
     },
@@ -2892,6 +2903,7 @@
       "source": "Tema3-DISM-1.pdf, páginas PDF 86.",
       "source_file": "Tema3-DISM-1.pdf",
       "source_pages": "86",
+      "source_type": "pdf",
       "reference_url": null,
       "shuffle_options": true
     },
@@ -2901,7 +2913,7 @@
       "tag": "WiFi y bandas",
       "objective": "WiFi y bandas",
       "level": "Aplicación",
-      "stem": "Se compara WiFi 1 (802.11b) en 2,4 GHz con un enlace WiFi 7 en 6 GHz, con potencia, antenas y entorno comparables. ¿Qué banda tiende a ofrecer mayor alcance y penetración en interiores?",
+      "stem": "Se comparan dos enlaces WiFi, uno en 2,4 GHz y otro en 6 GHz, con potencia, antenas y entorno comparables. ¿Qué banda tiende a ofrecer mayor alcance y penetración en interiores?",
       "options": [
         {
           "id": "o1",
@@ -2909,7 +2921,7 @@
         },
         {
           "id": "o2",
-          "text": "6 GHz, porque una generación más reciente garantiza más alcance"
+          "text": "6 GHz, porque una frecuencia mayor garantiza más cobertura"
         },
         {
           "id": "o3",
@@ -2921,53 +2933,16 @@
         }
       ],
       "correct_option_id": "o1",
-      "explanation": "En condiciones comparables, 2,4 GHz tiende a llegar más lejos y atravesar obstáculos mejor. WiFi 7 también puede usar 2,4 GHz: no es correcto concluir que WiFi 1 siempre llega más lejos que WiFi 7.",
+      "explanation": "En condiciones comparables, 2,4 GHz tiende a atravesar obstáculos mejor y cubrir más distancia que 6 GHz. El alcance real también depende de potencia, antenas, sensibilidad e interferencias; la comparación no se basa en el nombre de una generación.",
       "distractor_rationales": {
-        "o2": "La generación no elimina la mayor atenuación asociada a frecuencias altas.",
+        "o2": "Una frecuencia más alta no garantiza más alcance; en igualdad de condiciones suele atenuarse más al atravesar obstáculos.",
         "o3": "La banda y la propagación influyen incluso si el resto de condiciones es comparable.",
         "o4": "La frecuencia es uno de los factores relevantes en la propagación."
       },
       "source": "Tema3-DISM-1.pdf, páginas PDF 89–91.",
       "source_file": "Tema3-DISM-1.pdf",
       "source_pages": "89–91",
-      "reference_url": null,
-      "shuffle_options": true
-    },
-    {
-      "id": "t31-17",
-      "block": "t31",
-      "tag": "Generaciones WiFi",
-      "objective": "Generaciones WiFi",
-      "level": "Comprensión",
-      "stem": "¿Qué asociación entre estándar y generación WiFi coincide con el temario?",
-      "options": [
-        {
-          "id": "o1",
-          "text": "802.11ax con WiFi 6 y 802.11be con WiFi 7"
-        },
-        {
-          "id": "o2",
-          "text": "802.11ax con WiFi 7 y 802.11be con WiFi 6"
-        },
-        {
-          "id": "o3",
-          "text": "802.11ac con WiFi 6 y 802.11ax con WiFi 5"
-        },
-        {
-          "id": "o4",
-          "text": "802.11b con WiFi 7 y 802.11be con WiFi 1"
-        }
-      ],
-      "correct_option_id": "o1",
-      "explanation": "El tema asocia 802.11ax con WiFi 6 y 802.11be con WiFi 7. La pregunta identifica generaciones y evita memorizar sus anchos de banda.",
-      "distractor_rationales": {
-        "o2": "Intercambia las dos generaciones.",
-        "o3": "802.11ac corresponde a WiFi 5; 802.11ax a WiFi 6.",
-        "o4": "Invierte un estándar inicial y uno de los más recientes del material."
-      },
-      "source": "Tema3-DISM-1.pdf, páginas PDF 90–91.",
-      "source_file": "Tema3-DISM-1.pdf",
-      "source_pages": "90–91",
+      "source_type": "pdf",
       "reference_url": null,
       "shuffle_options": true
     },
@@ -3006,6 +2981,7 @@
       "source": "Tema3-DISM-1.pdf, páginas PDF 95, 104–105. Contraste: https://nfc-forum.org/learn/nfc-technology/",
       "source_file": "Tema3-DISM-1.pdf",
       "source_pages": "95, 104–105",
+      "source_type": "pdf",
       "reference_url": "https://nfc-forum.org/learn/nfc-technology/",
       "shuffle_options": true
     },
@@ -3044,6 +3020,7 @@
       "source": "Tema3-DISM-1.pdf, páginas PDF 95, 105.",
       "source_file": "Tema3-DISM-1.pdf",
       "source_pages": "95, 105",
+      "source_type": "pdf",
       "reference_url": null,
       "shuffle_options": true
     },
@@ -3082,44 +3059,7 @@
       "source": "Tema3-DISM-1.pdf, páginas PDF 100–102.",
       "source_file": "Tema3-DISM-1.pdf",
       "source_pages": "100–102",
-      "reference_url": null,
-      "shuffle_options": true
-    },
-    {
-      "id": "t32-01",
-      "block": "t32",
-      "tag": "Generaciones móviles",
-      "objective": "Generaciones móviles",
-      "level": "Comprensión",
-      "stem": "¿Qué transición introdujo GSM y la voz digital con SMS según la evolución del tema?",
-      "options": [
-        {
-          "id": "o1",
-          "text": "El paso de 1G a 2G"
-        },
-        {
-          "id": "o2",
-          "text": "El paso de 2G a 3G"
-        },
-        {
-          "id": "o3",
-          "text": "El paso de 3G a 4G"
-        },
-        {
-          "id": "o4",
-          "text": "El paso de 4G a 5G"
-        }
-      ],
-      "correct_option_id": "o1",
-      "explanation": "1G era analógico y orientado a voz. La segunda generación incorporó GSM, voz digital y SMS. La pregunta no depende de fechas de apagado de operadores.",
-      "distractor_rationales": {
-        "o2": "3G se asocia con UMTS/HSPA y acceso a Internet móvil, no con la introducción de GSM.",
-        "o3": "4G se asocia con LTE y banda ancha móvil.",
-        "o4": "5G se asocia con NR; GSM ya pertenecía a 2G."
-      },
-      "source": "Tema3-DISM-21.pdf, páginas PDF 5.",
-      "source_file": "Tema3-DISM-21.pdf",
-      "source_pages": "5",
+      "source_type": "pdf",
       "reference_url": null,
       "shuffle_options": true
     },
@@ -3158,6 +3098,7 @@
       "source": "Tema3-DISM-21.pdf, páginas PDF 9–10.",
       "source_file": "Tema3-DISM-21.pdf",
       "source_pages": "9–10",
+      "source_type": "pdf",
       "reference_url": null,
       "shuffle_options": true
     },
@@ -3196,6 +3137,7 @@
       "source": "Tema3-DISM-21.pdf, páginas PDF 14–15.",
       "source_file": "Tema3-DISM-21.pdf",
       "source_pages": "14–15",
+      "source_type": "pdf",
       "reference_url": null,
       "shuffle_options": false
     },
@@ -3234,6 +3176,7 @@
       "source": "Tema3-DISM-21.pdf, páginas PDF 13, 16.",
       "source_file": "Tema3-DISM-21.pdf",
       "source_pages": "13, 16",
+      "source_type": "pdf",
       "reference_url": null,
       "shuffle_options": false
     },
@@ -3272,6 +3215,7 @@
       "source": "Tema3-DISM-21.pdf, páginas PDF 16–17.",
       "source_file": "Tema3-DISM-21.pdf",
       "source_pages": "16–17",
+      "source_type": "pdf",
       "reference_url": null,
       "shuffle_options": false
     },
@@ -3310,6 +3254,7 @@
       "source": "Tema3-DISM-21.pdf, páginas PDF 16–17.",
       "source_file": "Tema3-DISM-21.pdf",
       "source_pages": "16–17",
+      "source_type": "pdf",
       "reference_url": null,
       "shuffle_options": false
     },
@@ -3348,6 +3293,7 @@
       "source": "Tema3-DISM-21.pdf, páginas PDF 20.",
       "source_file": "Tema3-DISM-21.pdf",
       "source_pages": "20",
+      "source_type": "pdf",
       "reference_url": null,
       "shuffle_options": false
     },
@@ -3386,6 +3332,7 @@
       "source": "Tema3-DISM-21.pdf, páginas PDF 21, 25.",
       "source_file": "Tema3-DISM-21.pdf",
       "source_pages": "21, 25",
+      "source_type": "pdf",
       "reference_url": null,
       "shuffle_options": false
     },
@@ -3424,6 +3371,7 @@
       "source": "Tema3-DISM-21.pdf, páginas PDF 23–27.",
       "source_file": "Tema3-DISM-21.pdf",
       "source_pages": "23–27",
+      "source_type": "pdf",
       "reference_url": null,
       "shuffle_options": false
     },
@@ -3462,6 +3410,7 @@
       "source": "Tema3-DISM-21.pdf, páginas PDF 24.",
       "source_file": "Tema3-DISM-21.pdf",
       "source_pages": "24",
+      "source_type": "pdf",
       "reference_url": null,
       "shuffle_options": false
     },
@@ -3500,6 +3449,7 @@
       "source": "Tema3-DISM-21.pdf, páginas PDF 21, 27–28.",
       "source_file": "Tema3-DISM-21.pdf",
       "source_pages": "21, 27–28",
+      "source_type": "pdf",
       "reference_url": null,
       "shuffle_options": true
     },
@@ -3538,6 +3488,7 @@
       "source": "Tema3-DISM-21.pdf, páginas PDF 29.",
       "source_file": "Tema3-DISM-21.pdf",
       "source_pages": "29",
+      "source_type": "pdf",
       "reference_url": null,
       "shuffle_options": true
     },
@@ -3576,6 +3527,7 @@
       "source": "Tema3-DISM-21.pdf, páginas PDF 35–36.",
       "source_file": "Tema3-DISM-21.pdf",
       "source_pages": "35–36",
+      "source_type": "pdf",
       "reference_url": null,
       "shuffle_options": true
     },
@@ -3614,6 +3566,7 @@
       "source": "Tema3-DISM-21.pdf, páginas PDF 36–40.",
       "source_file": "Tema3-DISM-21.pdf",
       "source_pages": "36–40",
+      "source_type": "pdf",
       "reference_url": null,
       "shuffle_options": true
     },
@@ -3652,6 +3605,7 @@
       "source": "Tema3-DISM-21.pdf, páginas PDF 41.",
       "source_file": "Tema3-DISM-21.pdf",
       "source_pages": "41",
+      "source_type": "pdf",
       "reference_url": null,
       "shuffle_options": true
     },
@@ -3690,6 +3644,7 @@
       "source": "Tema3-DISM-21.pdf, páginas PDF 42.",
       "source_file": "Tema3-DISM-21.pdf",
       "source_pages": "42",
+      "source_type": "pdf",
       "reference_url": null,
       "shuffle_options": true
     },
@@ -3728,6 +3683,7 @@
       "source": "Tema3-DISM-21.pdf, páginas PDF 43–45.",
       "source_file": "Tema3-DISM-21.pdf",
       "source_pages": "43–45",
+      "source_type": "pdf",
       "reference_url": null,
       "shuffle_options": true
     },
@@ -3766,6 +3722,7 @@
       "source": "Tema3-DISM-21.pdf, páginas PDF 49, 56.",
       "source_file": "Tema3-DISM-21.pdf",
       "source_pages": "49, 56",
+      "source_type": "pdf",
       "reference_url": null,
       "shuffle_options": false
     },
@@ -3804,6 +3761,7 @@
       "source": "Tema3-DISM-21.pdf, páginas PDF 50, 52, 57.",
       "source_file": "Tema3-DISM-21.pdf",
       "source_pages": "50, 52, 57",
+      "source_type": "pdf",
       "reference_url": null,
       "shuffle_options": false
     },
@@ -3842,7 +3800,1529 @@
       "source": "Tema3-DISM-21.pdf, páginas PDF 51, 55.",
       "source_file": "Tema3-DISM-21.pdf",
       "source_pages": "51, 55",
+      "source_type": "pdf",
       "reference_url": null,
+      "shuffle_options": true
+    },
+    {
+      "id": "t1-21",
+      "block": "t1",
+      "tag": "Aplicaciones móviles",
+      "objective": "Aplicaciones móviles",
+      "level": "Comprensión",
+      "stem": "¿Qué describe el desarrollo de aplicaciones móviles en el contexto del tema?",
+      "options": [
+        {
+          "id": "o1",
+          "text": "Crear software orientado a dispositivos como smartphones y tabletas"
+        },
+        {
+          "id": "o2",
+          "text": "Diseñar únicamente páginas web para ordenadores de sobremesa"
+        },
+        {
+          "id": "o3",
+          "text": "Instalar y mantener las antenas de una red de telefonía"
+        },
+        {
+          "id": "o4",
+          "text": "Fabricar procesadores y pantallas para teléfonos"
+        }
+      ],
+      "correct_option_id": "o1",
+      "explanation": "El tema define el desarrollo móvil como procesos y procedimientos para crear software destinado a pequeños dispositivos inalámbricos, como teléfonos y tabletas.",
+      "distractor_rationales": {
+        "o2": "El desarrollo móvil tiene como destino dispositivos móviles, aunque pueda reutilizar tecnologías web.",
+        "o3": "Eso es infraestructura de comunicaciones, no el proceso de desarrollo de apps.",
+        "o4": "El desarrollo de aplicaciones escribe software; no fabrica los componentes físicos."
+      },
+      "source": "Tema1DISM_Desarrollo_de_aplicaciones_multiplataforma.pdf, páginas PDF 2–3.",
+      "source_file": "Tema1DISM_Desarrollo_de_aplicaciones_multiplataforma.pdf",
+      "source_pages": "2–3",
+      "source_type": "pdf",
+      "reference_url": null,
+      "shuffle_options": true
+    },
+    {
+      "id": "t21-21",
+      "block": "t21",
+      "tag": "Aplicaciones multimedia",
+      "objective": "Aplicaciones multimedia",
+      "level": "Comprensión",
+      "stem": "¿Qué caracteriza a una aplicación multimedia?",
+      "options": [
+        {
+          "id": "o1",
+          "text": "Integra varios medios, como texto, audio e imagen, bajo control informático"
+        },
+        {
+          "id": "o2",
+          "text": "Utiliza exclusivamente vídeo, aunque disponga de texto o sonido"
+        },
+        {
+          "id": "o3",
+          "text": "Presenta cada medio en un equipo aislado, sin integración entre ellos"
+        },
+        {
+          "id": "o4",
+          "text": "Sustituye los datos digitales por señales analógicas independientes"
+        }
+      ],
+      "correct_option_id": "o1",
+      "explanation": "Una aplicación multimedia combina información de distintos medios y fuentes, de forma coordinada por el sistema informático.",
+      "distractor_rationales": {
+        "o2": "La multimedia integra diferentes medios; no exige limitarse al vídeo.",
+        "o3": "La integración controlada es parte del concepto.",
+        "o4": "El sistema del tema representa y procesa la información digitalmente."
+      },
+      "source": "Tema2-DISM-1.pdf, páginas PDF 2–3.",
+      "source_file": "Tema2-DISM-1.pdf",
+      "source_pages": "2–3",
+      "source_type": "pdf",
+      "reference_url": null,
+      "shuffle_options": true
+    },
+    {
+      "id": "t21-22",
+      "block": "t21",
+      "tag": "Hipermedia",
+      "objective": "Hipermedia",
+      "level": "Aplicación",
+      "stem": "Un museo ofrece fichas de obras enlazadas con vídeos y audios. El visitante elige qué enlaces seguir. ¿Qué rasgo aporta la hipermedia?",
+      "options": [
+        {
+          "id": "o1",
+          "text": "Navegación entre contenidos de distintos medios"
+        },
+        {
+          "id": "o2",
+          "text": "Reproducción de todo el material en una secuencia obligatoria"
+        },
+        {
+          "id": "o3",
+          "text": "Duplicación del mismo vídeo en varios discos"
+        },
+        {
+          "id": "o4",
+          "text": "Transmisión de un único directo a todos los visitantes"
+        }
+      ],
+      "correct_option_id": "o1",
+      "explanation": "La hipermedia combina medios y un sistema de navegación que permite al usuario elegir su recorrido.",
+      "distractor_rationales": {
+        "o2": "Una secuencia obligatoria se corresponde con multimedia lineal, sin la elección descrita.",
+        "o3": "La redundancia de almacenamiento no define la navegación hipermedia.",
+        "o4": "La distribución simultánea no explica los enlaces elegidos individualmente."
+      },
+      "source": "Tema2-DISM-1.pdf, páginas PDF 4–5.",
+      "source_file": "Tema2-DISM-1.pdf",
+      "source_pages": "4–5",
+      "source_type": "pdf",
+      "reference_url": null,
+      "shuffle_options": true
+    },
+    {
+      "id": "t21-23",
+      "block": "t21",
+      "tag": "Integración digital",
+      "objective": "Integración digital",
+      "level": "Comprensión",
+      "stem": "¿Qué requisito permite a un sistema multimedia almacenar y procesar de forma integrada información de medios distintos?",
+      "options": [
+        {
+          "id": "o1",
+          "text": "Representar digitalmente la información bajo control del computador"
+        },
+        {
+          "id": "o2",
+          "text": "Mantener los medios como señales analógicas sin conversión"
+        },
+        {
+          "id": "o3",
+          "text": "Utilizar un programa sin relación para cada medio y no intercambiar datos"
+        },
+        {
+          "id": "o4",
+          "text": "Asignar el mismo tamaño de archivo a todos los medios"
+        }
+      ],
+      "correct_option_id": "o1",
+      "explanation": "La integración requiere representaciones digitales manejables por el sistema. No significa que todos los medios usen un mismo formato o tamaño.",
+      "distractor_rationales": {
+        "o2": "No permite el procesamiento digital integrado descrito.",
+        "o3": "La ausencia de integración contradice el sistema multimedia del tema.",
+        "o4": "Texto, audio e imagen tienen representaciones y necesidades diferentes; igualar tamaños no los integra."
+      },
+      "source": "Tema2-DISM-1.pdf, páginas PDF 6.",
+      "source_file": "Tema2-DISM-1.pdf",
+      "source_pages": "6",
+      "source_type": "pdf",
+      "reference_url": null,
+      "shuffle_options": true
+    },
+    {
+      "id": "t21-24",
+      "block": "t21",
+      "tag": "Proyecto multimedia: planificación",
+      "objective": "Proyecto multimedia: planificación",
+      "level": "Aplicación",
+      "stem": "Antes de producir los materiales se estiman personas, equipos, costes y tiempo, y se redactan los requisitos. ¿A qué etapa corresponde?",
+      "options": [
+        {
+          "id": "o1",
+          "text": "Planificación y evaluación de costes"
+        },
+        {
+          "id": "o2",
+          "text": "Diseño y producción de materiales"
+        },
+        {
+          "id": "o3",
+          "text": "Pruebas de conformidad del sistema terminado"
+        },
+        {
+          "id": "o4",
+          "text": "Distribución y promoción del producto"
+        }
+      ],
+      "correct_option_id": "o1",
+      "explanation": "La planificación concreta necesidades, costes y especificaciones. Sirve de referencia para producir y evaluar el sistema.",
+      "distractor_rationales": {
+        "o2": "Esa etapa desarrolla los recursos y el código a partir de la planificación.",
+        "o3": "Las pruebas contrastan el sistema con requisitos ya definidos.",
+        "o4": "La distribución prepara y entrega el producto al final del proceso."
+      },
+      "source": "Tema2-DISM-1.pdf, páginas PDF 13.",
+      "source_file": "Tema2-DISM-1.pdf",
+      "source_pages": "13",
+      "source_type": "pdf",
+      "reference_url": null,
+      "shuffle_options": true
+    },
+    {
+      "id": "t21-25",
+      "block": "t21",
+      "tag": "Proyecto multimedia: pruebas",
+      "objective": "Proyecto multimedia: pruebas",
+      "level": "Aplicación",
+      "stem": "Un equipo ejecuta su aplicación en distintas situaciones y contrasta el resultado con las especificaciones. ¿Cuál es el propósito de esa etapa?",
+      "options": [
+        {
+          "id": "o1",
+          "text": "Comprobar si el sistema cumple los requisitos definidos"
+        },
+        {
+          "id": "o2",
+          "text": "Definir por primera vez qué producto se quiere construir"
+        },
+        {
+          "id": "o3",
+          "text": "Limitarse a empaquetar la aplicación para su distribución"
+        },
+        {
+          "id": "o4",
+          "text": "Producir todos los audios y vídeos que aún faltan"
+        }
+      ],
+      "correct_option_id": "o1",
+      "explanation": "Las pruebas evalúan si el sistema funciona de acuerdo con sus requisitos en diferentes situaciones de uso.",
+      "distractor_rationales": {
+        "o2": "Los requisitos se establecen durante la planificación y sirven de criterio a las pruebas.",
+        "o3": "Empaquetar y distribuir no verifica por sí mismo los requisitos.",
+        "o4": "La producción genera recursos; aquí se está evaluando el sistema."
+      },
+      "source": "Tema2-DISM-1.pdf, páginas PDF 13.",
+      "source_file": "Tema2-DISM-1.pdf",
+      "source_pages": "13",
+      "source_type": "pdf",
+      "reference_url": null,
+      "shuffle_options": true
+    },
+    {
+      "id": "t21-26",
+      "block": "t21",
+      "tag": "Requerimientos multimedia",
+      "objective": "Requerimientos multimedia",
+      "level": "Aplicación",
+      "stem": "Una aplicación reproduce vídeo en tiempo real, pero su sistema de archivos entrega datos de forma irregular y demasiado lenta. ¿Qué requisito necesita reforzar directamente?",
+      "options": [
+        {
+          "id": "o1",
+          "text": "La eficiencia y rapidez de entrada/salida de los datos"
+        },
+        {
+          "id": "o2",
+          "text": "La capacidad total de almacenamiento, aunque la lectura siga igual"
+        },
+        {
+          "id": "o3",
+          "text": "La potencia gráfica, manteniendo el mismo suministro insuficiente de datos"
+        },
+        {
+          "id": "o4",
+          "text": "La rapidez con que aparece el menú inicial de la aplicación"
+        }
+      ],
+      "correct_option_id": "o1",
+      "explanation": "La captura y reproducción en tiempo real necesitan E/S suficiente y regular. Más capacidad de almacenamiento no implica por sí sola más rapidez de acceso.",
+      "distractor_rationales": {
+        "o2": "Más capacidad no resuelve por sí misma la velocidad o regularidad de lectura.",
+        "o3": "El cuello de botella descrito es entregar datos, no procesarlos una vez recibidos.",
+        "o4": "Una interfaz que abre antes no garantiza el caudal de datos durante el vídeo."
+      },
+      "source": "Tema2-DISM-1.pdf, páginas PDF 14–15.",
+      "source_file": "Tema2-DISM-1.pdf",
+      "source_pages": "14–15",
+      "source_type": "pdf",
+      "reference_url": null,
+      "shuffle_options": true
+    },
+    {
+      "id": "t21-27",
+      "block": "t21",
+      "tag": "Jitter frente a latencia",
+      "objective": "Jitter frente a latencia",
+      "level": "Aplicación",
+      "stem": "Todos los paquetes tardan 200 ms y llegan separados exactamente por los mismos intervalos con los que se enviaron. ¿Qué describe mejor ese enlace idealizado?",
+      "options": [
+        {
+          "id": "o1",
+          "text": "Tiene retardo constante y no presenta jitter de llegada"
+        },
+        {
+          "id": "o2",
+          "text": "Tiene mucho jitter porque el retardo no es cero"
+        },
+        {
+          "id": "o3",
+          "text": "No tiene latencia porque conserva los intervalos"
+        },
+        {
+          "id": "o4",
+          "text": "Tiene jitter igual al bitrate del vídeo"
+        }
+      ],
+      "correct_option_id": "o1",
+      "explanation": "La latencia es el tiempo de tránsito; el jitter es su variación. Puede existir latencia elevada con una llegada perfectamente regular.",
+      "distractor_rationales": {
+        "o2": "Un retardo grande pero constante no implica variación del retardo.",
+        "o3": "La latencia sigue siendo 200 ms, aunque los intervalos sean regulares.",
+        "o4": "El jitter y el bitrate son magnitudes distintas."
+      },
+      "source": "Tema2-DISM-1.pdf, páginas PDF 52–53.",
+      "source_file": "Tema2-DISM-1.pdf",
+      "source_pages": "52–53",
+      "source_type": "pdf",
+      "reference_url": null,
+      "shuffle_options": true
+    },
+    {
+      "id": "t21-28",
+      "block": "t21",
+      "tag": "Dimensionado de una reserva",
+      "objective": "Dimensionado de una reserva",
+      "level": "Cálculo",
+      "stem": "Un reproductor guarda una reserva de 8 Mbit. Consume a 4 Mbit/s y recibe de forma constante 2 Mbit/s. Sin adaptación de calidad, ¿cuánto tarda en agotar esa reserva?",
+      "options": [
+        {
+          "id": "o2",
+          "text": "2 segundos"
+        },
+        {
+          "id": "o1",
+          "text": "4 segundos"
+        },
+        {
+          "id": "o3",
+          "text": "8 segundos"
+        },
+        {
+          "id": "o4",
+          "text": "16 segundos"
+        }
+      ],
+      "correct_option_id": "o1",
+      "explanation": "La reserva disminuye a 4 − 2 = 2 Mbit/s. Por tanto, tarda 8/2 = 4 s en vaciarse. Un búfer finito no compensa indefinidamente un caudal inferior al consumo.",
+      "distractor_rationales": {
+        "o2": "Divide la reserva por el consumo, pero omite los datos que siguen llegando.",
+        "o3": "No divide por el déficit neto de 2 Mbit/s.",
+        "o4": "Multiplica por el déficit en lugar de dividir la reserva entre ese déficit."
+      },
+      "source": "Tema2-DISM-1.pdf, páginas PDF 52–53.",
+      "source_file": "Tema2-DISM-1.pdf",
+      "source_pages": "52–53",
+      "source_type": "pdf",
+      "reference_url": null,
+      "shuffle_options": false
+    },
+    {
+      "id": "t21-29",
+      "block": "t21",
+      "tag": "Netflix: control y entrega",
+      "objective": "Netflix: control y entrega",
+      "level": "Comprensión",
+      "stem": "En el esquema simplificado de Netflix del tema, ¿qué reparto de responsabilidades es correcto?",
+      "options": [
+        {
+          "id": "o1",
+          "text": "El backend gestiona identidad y catálogo; Open Connect entrega el vídeo"
+        },
+        {
+          "id": "o2",
+          "text": "El OCA factura las suscripciones y el backend sirve todos los bytes de vídeo"
+        },
+        {
+          "id": "o3",
+          "text": "El cliente administra los servidores y el OCA decide las recomendaciones"
+        },
+        {
+          "id": "o4",
+          "text": "El backend solo guarda fotogramas y Open Connect ejecuta el inicio de sesión"
+        }
+      ],
+      "correct_option_id": "o1",
+      "explanation": "La arquitectura distingue el plano de control (identidad, catálogo y decisiones) de la entrega audiovisual desde Open Connect.",
+      "distractor_rationales": {
+        "o2": "Intercambia la función de entrega del OCA con la lógica de servicio del backend.",
+        "o3": "El cliente reproduce y los OCA entregan; la personalización pertenece al backend.",
+        "o4": "Reduce el backend a almacenamiento y atribuye al OCA una función de identidad que no le corresponde."
+      },
+      "source": "Tema2-DISM-1.pdf, páginas PDF 57–59, 67.",
+      "source_file": "Tema2-DISM-1.pdf",
+      "source_pages": "57–59, 67",
+      "source_type": "pdf",
+      "reference_url": null,
+      "shuffle_options": true
+    },
+    {
+      "id": "t21-30",
+      "block": "t21",
+      "tag": "Netflix: autorización de reproducción",
+      "objective": "Netflix: autorización de reproducción",
+      "level": "Aplicación",
+      "stem": "Un cliente solicita reproducir una película. Según el flujo del PDF, ¿qué debe comprobar el servicio de reproducción antes de facilitar el acceso?",
+      "options": [
+        {
+          "id": "o1",
+          "text": "Que la solicitud esté autorizada por el plan y la licencia del contenido"
+        },
+        {
+          "id": "o2",
+          "text": "Que el cliente haya elegido ya el OCA de menor latencia"
+        },
+        {
+          "id": "o3",
+          "text": "Que todos los OCA contengan la totalidad del catálogo"
+        },
+        {
+          "id": "o4",
+          "text": "Que todos los espectadores utilicen la misma calidad de vídeo"
+        }
+      ],
+      "correct_option_id": "o1",
+      "explanation": "El servicio comprueba que la petición sea válida para el contenido y el suscriptor antes de organizar su reproducción.",
+      "distractor_rationales": {
+        "o2": "La selección del OCA es un paso posterior a validar la petición en el flujo descrito.",
+        "o3": "No se necesita replicar todo el catálogo en cada caché para autorizar una película.",
+        "o4": "La autorización no exige una representación idéntica para todos los clientes."
+      },
+      "source": "Tema2-DISM-1.pdf, páginas PDF 62–64.",
+      "source_file": "Tema2-DISM-1.pdf",
+      "source_pages": "62–64",
+      "source_type": "pdf",
+      "reference_url": null,
+      "shuffle_options": true
+    },
+    {
+      "id": "t21-31",
+      "block": "t21",
+      "tag": "Netflix: ubicación de OCA",
+      "objective": "Netflix: ubicación de OCA",
+      "level": "Aplicación",
+      "stem": "¿Por qué resulta útil ubicar un OCA dentro de la red de un proveedor de Internet?",
+      "options": [
+        {
+          "id": "o1",
+          "text": "Acerca los archivos al usuario y reduce tráfico de tránsito externo"
+        },
+        {
+          "id": "o2",
+          "text": "Evita que el cliente necesite conexión a la red"
+        },
+        {
+          "id": "o3",
+          "text": "Convierte cada película en un vídeo sin compresión"
+        },
+        {
+          "id": "o4",
+          "text": "Sustituye las cuentas y permisos por acceso anónimo a todo el catálogo"
+        }
+      ],
+      "correct_option_id": "o1",
+      "explanation": "La entrega localizada reduce la distancia de red y la dependencia de enlaces externos. No equivale a reproducir sin conexión ni a eliminar la autorización.",
+      "distractor_rationales": {
+        "o2": "El cliente sigue necesitando conectividad para solicitar y recibir contenido.",
+        "o3": "La ubicación del servidor no elimina la codificación de los vídeos.",
+        "o4": "Los controles de acceso siguen gestionándose aunque la caché sea cercana."
+      },
+      "source": "Tema2-DISM-1.pdf, páginas PDF 57–59. Contraste: https://openconnect.netflix.com/en/",
+      "source_file": "Tema2-DISM-1.pdf",
+      "source_pages": "57–59",
+      "source_type": "pdf",
+      "reference_url": "https://openconnect.netflix.com/en/",
+      "shuffle_options": true
+    },
+    {
+      "id": "t21-32",
+      "block": "t21",
+      "tag": "Unicast y multicast",
+      "objective": "Unicast y multicast",
+      "level": "Cálculo",
+      "stem": "Desde una misma interfaz de origen se envía un directo de 8 Mbit/s a 100 usuarios. Sin sobrecarga y suponiendo multicast admitido por la red, ¿qué tráfico sale del origen en cada caso?",
+      "options": [
+        {
+          "id": "o1",
+          "text": "Unicast: 800 Mbit/s; multicast: 8 Mbit/s"
+        },
+        {
+          "id": "o2",
+          "text": "Unicast: 8 Mbit/s; multicast: 800 Mbit/s"
+        },
+        {
+          "id": "o3",
+          "text": "Unicast: 800 Mbit/s; multicast: 800 Mbit/s"
+        },
+        {
+          "id": "o4",
+          "text": "Unicast: 8 Mbit/s; multicast: 8 Mbit/s"
+        }
+      ],
+      "correct_option_id": "o1",
+      "explanation": "Unicast envía 100 flujos: 100×8 = 800 Mbit/s. Multicast emite un flujo de 8 Mbit/s en el origen y la red lo replica donde corresponde.",
+      "distractor_rationales": {
+        "o2": "Invierte el flujo individual de unicast y el flujo compartido de multicast.",
+        "o3": "Cuenta una copia por usuario también en el origen multicast.",
+        "o4": "Omite las cien copias individuales que debe enviar ese origen en unicast."
+      },
+      "source": "Tema2-DISM-1.pdf, páginas PDF 25.",
+      "source_file": "Tema2-DISM-1.pdf",
+      "source_pages": "25",
+      "source_type": "pdf",
+      "reference_url": null,
+      "shuffle_options": true
+    },
+    {
+      "id": "t21-33",
+      "block": "t21",
+      "tag": "QoS y medios interactivos",
+      "objective": "QoS y medios interactivos",
+      "level": "Aplicación",
+      "stem": "¿Por qué una videoconferencia necesita cuidar especialmente el retardo además del caudal de datos?",
+      "options": [
+        {
+          "id": "o1",
+          "text": "El retraso excesivo dificulta la interacción aunque llegue todo el contenido"
+        },
+        {
+          "id": "o2",
+          "text": "La ausencia de pérdidas garantiza por sí sola una conversación fluida"
+        },
+        {
+          "id": "o3",
+          "text": "Aumentar la reserva de búfer elimina el retraso percibido"
+        },
+        {
+          "id": "o4",
+          "text": "Ancho de banda y latencia son dos nombres de la misma magnitud"
+        }
+      ],
+      "correct_option_id": "o1",
+      "explanation": "En aplicaciones interactivas importa que la información llegue a tiempo. Una tasa suficiente o una entrega sin pérdidas no garantizan por sí mismas baja latencia.",
+      "distractor_rationales": {
+        "o2": "Una entrega perfecta pero muy tardía sigue perjudicando la conversación.",
+        "o3": "Una reserva mayor puede mejorar estabilidad, pero añade espera y no elimina la latencia.",
+        "o4": "Miden capacidad de transferencia y tiempo, respectivamente; hay que atender a ambas."
+      },
+      "source": "Tema2-DISM-1.pdf, páginas PDF 14–15.",
+      "source_file": "Tema2-DISM-1.pdf",
+      "source_pages": "14–15",
+      "source_type": "pdf",
+      "reference_url": null,
+      "shuffle_options": true
+    },
+    {
+      "id": "t22-21",
+      "block": "t22",
+      "tag": "UTF-32",
+      "objective": "UTF-32",
+      "level": "Comprensión",
+      "stem": "¿Qué forma de codificación Unicode emplea cuatro bytes por punto de código?",
+      "options": [
+        {
+          "id": "o1",
+          "text": "UTF-32"
+        },
+        {
+          "id": "o2",
+          "text": "UTF-8"
+        },
+        {
+          "id": "o3",
+          "text": "UTF-16"
+        },
+        {
+          "id": "o4",
+          "text": "ASCII de 7 bits"
+        }
+      ],
+      "correct_option_id": "o1",
+      "explanation": "UTF-32 representa cada punto de código Unicode en una unidad de 32 bits. Un carácter visual puede componerse de varios puntos de código; no hay que confundir ambas magnitudes.",
+      "distractor_rationales": {
+        "o2": "UTF-8 utiliza de uno a cuatro bytes, según el punto de código.",
+        "o3": "UTF-16 utiliza una o dos unidades de 16 bits, no cuatro bytes para todos los puntos de código.",
+        "o4": "ASCII tiene un repertorio limitado y no es una codificación de todo Unicode en cuatro bytes."
+      },
+      "source": "Tema2-DISM-2.pdf, páginas PDF 23.",
+      "source_file": "Tema2-DISM-2.pdf",
+      "source_pages": "23",
+      "source_type": "pdf",
+      "reference_url": null,
+      "shuffle_options": true
+    },
+    {
+      "id": "t22-22",
+      "block": "t22",
+      "tag": "Elección entre UTF",
+      "objective": "Elección entre UTF",
+      "level": "Aplicación",
+      "stem": "Un texto contiene solo ideogramas del BMP que necesitan tres bytes en UTF-8 y una unidad en UTF-16. Sin cabeceras ni BOM, ¿qué representación usa menos espacio por esos puntos de código?",
+      "options": [
+        {
+          "id": "o1",
+          "text": "UTF-16, con dos bytes por punto de código"
+        },
+        {
+          "id": "o2",
+          "text": "UTF-8, con un byte por punto de código"
+        },
+        {
+          "id": "o3",
+          "text": "UTF-32, con un byte por punto de código"
+        },
+        {
+          "id": "o4",
+          "text": "Las tres ocupan lo mismo por tratarse de Unicode"
+        }
+      ],
+      "correct_option_id": "o1",
+      "explanation": "Con las condiciones dadas, UTF-16 usa 2 bytes, UTF-8 usa 3 y UTF-32 usa 4. La ventaja de espacio de UTF-8 en textos ASCII no se generaliza a todos los repertorios.",
+      "distractor_rationales": {
+        "o2": "Un byte en UTF-8 corresponde a ASCII, no a los ideogramas especificados.",
+        "o3": "UTF-32 utiliza cuatro bytes, no uno.",
+        "o4": "Unicode no obliga a que todas sus codificaciones tengan el mismo tamaño."
+      },
+      "source": "Tema2-DISM-2.pdf, páginas PDF 23, 25–26.",
+      "source_file": "Tema2-DISM-2.pdf",
+      "source_pages": "23, 25–26",
+      "source_type": "pdf",
+      "reference_url": null,
+      "shuffle_options": true
+    },
+    {
+      "id": "t22-23",
+      "block": "t22",
+      "tag": "Tamaño de texto ASCII",
+      "objective": "Tamaño de texto ASCII",
+      "level": "Cálculo",
+      "stem": "Se guardan 100 puntos de código del repertorio ASCII, sin BOM ni cabeceras. ¿Cuántos bytes necesita UTF-8?",
+      "options": [
+        {
+          "id": "o1",
+          "text": "100 bytes"
+        },
+        {
+          "id": "o2",
+          "text": "200 bytes"
+        },
+        {
+          "id": "o3",
+          "text": "400 bytes"
+        },
+        {
+          "id": "o4",
+          "text": "800 bytes"
+        }
+      ],
+      "correct_option_id": "o1",
+      "explanation": "Cada punto de código ASCII ocupa un byte en UTF-8: 100×1 = 100 bytes. En las condiciones del enunciado serían 200 en UTF-16 y 400 en UTF-32.",
+      "distractor_rationales": {
+        "o2": "Cuenta dos bytes por punto de código como en UTF-16 para este repertorio.",
+        "o3": "Aplica el tamaño fijo de UTF-32 en lugar de UTF-8.",
+        "o4": "Confunde bits y bytes o multiplica por ocho una cantidad que ya está en bytes."
+      },
+      "source": "Tema2-DISM-2.pdf, páginas PDF 23, 25.",
+      "source_file": "Tema2-DISM-2.pdf",
+      "source_pages": "23, 25",
+      "source_type": "pdf",
+      "reference_url": null,
+      "shuffle_options": false
+    },
+    {
+      "id": "t22-24",
+      "block": "t22",
+      "tag": "RAID 10",
+      "objective": "RAID 10",
+      "level": "Aplicación",
+      "stem": "Un RAID 10 tiene dos parejas espejo: discos A/B y discos C/D. Fallan A y C y sus compañeros siguen operativos. ¿Qué ocurre con los datos del conjunto?",
+      "options": [
+        {
+          "id": "o1",
+          "text": "Siguen accesibles porque queda una copia de cada pareja"
+        },
+        {
+          "id": "o2",
+          "text": "Se pierden porque RAID 10 solo tolera un fallo en todo el conjunto"
+        },
+        {
+          "id": "o3",
+          "text": "Se recuperan mediante la doble paridad de A y C"
+        },
+        {
+          "id": "o4",
+          "text": "Solo queda accesible la mitad que estaba en B"
+        }
+      ],
+      "correct_option_id": "o1",
+      "explanation": "La tolerancia depende de qué discos fallen. A y C pertenecen a parejas distintas y B/D conservan sus datos. Perder A y B sí eliminaría una pareja completa.",
+      "distractor_rationales": {
+        "o2": "Puede tolerar más de un fallo si no se pierden todas las copias de una pareja.",
+        "o3": "RAID 10 utiliza espejos y división de datos, no doble paridad.",
+        "o4": "D conserva la copia de C; no se pierde esa mitad de los datos."
+      },
+      "source": "Tema2-DISM-2.pdf, páginas PDF 16.",
+      "source_file": "Tema2-DISM-2.pdf",
+      "source_pages": "16",
+      "source_type": "pdf",
+      "reference_url": null,
+      "shuffle_options": true
+    },
+    {
+      "id": "t22-25",
+      "block": "t22",
+      "tag": "Clasificación de arquitecturas",
+      "objective": "Clasificación de arquitecturas",
+      "level": "Comprensión",
+      "stem": "En la clasificación del tema, ¿qué asociación entre familia y forma de adaptación es correcta?",
+      "options": [
+        {
+          "id": "o1",
+          "text": "Programable: cambia instrucciones; dedicada ASIC: circuito fijo; FPGA: lógica reconfigurable"
+        },
+        {
+          "id": "o2",
+          "text": "Programable: circuito fijo sin instrucciones; ASIC: cambia su lógica; FPGA: solo cambia datos"
+        },
+        {
+          "id": "o3",
+          "text": "Programable: cambia instrucciones; ASIC: lógica reconfigurable; FPGA: circuito fijo"
+        },
+        {
+          "id": "o4",
+          "text": "Programable: cambia conexiones físicas; ASIC: ejecuta cualquier software; FPGA: solo almacena"
+        }
+      ],
+      "correct_option_id": "o1",
+      "explanation": "El árbol de la página 47 distingue programables, dedicadas y reconfigurables. El programa adapta la secuencia de instrucciones; el ASIC dedica su circuito a una tarea; la FPGA permite reconfigurar su lógica.",
+      "distractor_rationales": {
+        "o2": "Atribuye la reconfiguración al ASIC e impide a la FPGA adaptar la lógica.",
+        "o3": "Intercambia las propiedades de ASIC y FPGA.",
+        "o4": "Confunde el software programable, el circuito dedicado y el hardware reconfigurable."
+      },
+      "source": "Tema2-DISM-2.pdf, páginas PDF 47, 61–63.",
+      "source_file": "Tema2-DISM-2.pdf",
+      "source_pages": "47, 61–63",
+      "source_type": "pdf",
+      "reference_url": null,
+      "shuffle_options": true
+    },
+    {
+      "id": "t22-26",
+      "block": "t22",
+      "tag": "Programables de propósito general y específicas",
+      "objective": "Programables de propósito general y específicas",
+      "level": "Comprensión",
+      "stem": "¿Dónde se sitúa un DSP programable en el árbol de arquitecturas del tema?",
+      "options": [
+        {
+          "id": "o1",
+          "text": "En las programables específicas, optimizadas para procesamiento de señal"
+        },
+        {
+          "id": "o2",
+          "text": "En las dedicadas ASIC, porque ningún DSP admite cambiar su programa"
+        },
+        {
+          "id": "o3",
+          "text": "En las reconfigurables FPGA, porque ejecutar un filtro cambia sus conexiones"
+        },
+        {
+          "id": "o4",
+          "text": "En las programables de propósito general, sin especialización para señal"
+        }
+      ],
+      "correct_option_id": "o1",
+      "explanation": "En la clasificación, ser específico indica optimización para una clase de tareas. Un DSP puede seguir siendo programable; no debe confundirse esa especialización con la rama de ASIC dedicados.",
+      "distractor_rationales": {
+        "o2": "Un DSP programable permite cambiar instrucciones; especialización no significa circuito ASIC fijo.",
+        "o3": "Cambiar el programa de un DSP no equivale a reconfigurar bloques e interconexiones de una FPGA.",
+        "o4": "El DSP del caso está optimizado para algoritmos de señal y se sitúa entre las programables específicas."
+      },
+      "source": "Tema2-DISM-2.pdf, páginas PDF 47, 51–53, 63.",
+      "source_file": "Tema2-DISM-2.pdf",
+      "source_pages": "47, 51–53, 63",
+      "source_type": "pdf",
+      "reference_url": null,
+      "shuffle_options": true
+    },
+    {
+      "id": "t22-27",
+      "block": "t22",
+      "tag": "Monolíticas y modulares",
+      "objective": "Monolíticas y modulares",
+      "level": "Comprensión",
+      "stem": "¿Qué distingue una implementación monolítica de una modular en las arquitecturas del tema?",
+      "options": [
+        {
+          "id": "o1",
+          "text": "La monolítica integra el sistema en un chip; la modular combina varios chips"
+        },
+        {
+          "id": "o2",
+          "text": "La monolítica ejecuta un único programa; la modular permite varios usuarios"
+        },
+        {
+          "id": "o3",
+          "text": "La monolítica carece de memoria; la modular tiene memoria externa"
+        },
+        {
+          "id": "o4",
+          "text": "La monolítica es siempre FPGA; la modular es siempre ASIC"
+        }
+      ],
+      "correct_option_id": "o1",
+      "explanation": "La distinción monolítica/modular describe la integración física. Es un eje diferente de programable, dedicado o reconfigurable.",
+      "distractor_rationales": {
+        "o2": "Monolítico/modular se refiere aquí a la implementación física, no al número de programas o usuarios.",
+        "o3": "El número de chips no impone esa ausencia de memoria.",
+        "o4": "La distinción de uno o varios chips puede aplicarse a diferentes familias."
+      },
+      "source": "Tema2-DISM-2.pdf, páginas PDF 47, 61–62.",
+      "source_file": "Tema2-DISM-2.pdf",
+      "source_pages": "47, 61–62",
+      "source_type": "pdf",
+      "reference_url": null,
+      "shuffle_options": true
+    },
+    {
+      "id": "t22-28",
+      "block": "t22",
+      "tag": "RISC y CISC",
+      "objective": "RISC y CISC",
+      "level": "Comprensión",
+      "stem": "¿Qué diferencia conceptual entre RISC y CISC recoge el temario?",
+      "options": [
+        {
+          "id": "o1",
+          "text": "RISC prioriza instrucciones simples; CISC dispone de un repertorio más complejo"
+        },
+        {
+          "id": "o2",
+          "text": "RISC usa el repertorio más complejo y CISC prioriza instrucciones simples"
+        },
+        {
+          "id": "o3",
+          "text": "CISC tiene instrucciones de longitud fija y RISC las tiene todas variables"
+        },
+        {
+          "id": "o4",
+          "text": "Solo CISC permite compilar programas escritos en lenguajes de alto nivel"
+        }
+      ],
+      "correct_option_id": "o1",
+      "explanation": "Dentro de las programables de propósito general, RISC se asocia con instrucciones frecuentes y simples y CISC con un juego más rico y complejo. No son familias RAID ni sinónimos de FPGA.",
+      "distractor_rationales": {
+        "o2": "Invierte la distinción conceptual presentada en el tema.",
+        "o3": "No corresponde a la caracterización del tema, que destaca la longitud variable en CISC.",
+        "o4": "Ambas familias pueden ejecutar programas compilados desde lenguajes de alto nivel."
+      },
+      "source": "Tema2-DISM-2.pdf, páginas PDF 47, 49–50.",
+      "source_file": "Tema2-DISM-2.pdf",
+      "source_pages": "47, 49–50",
+      "source_type": "pdf",
+      "reference_url": null,
+      "shuffle_options": true
+    },
+    {
+      "id": "t22-29",
+      "block": "t22",
+      "tag": "Efectos de la compresión con pérdida",
+      "objective": "Efectos de la compresión con pérdida",
+      "level": "Aplicación",
+      "stem": "Se comprime una fotografía con JPEG convencional usando una compresión cada vez más agresiva. ¿Qué compromiso debe evaluarse?",
+      "options": [
+        {
+          "id": "o1",
+          "text": "Reducir el tamaño frente a introducir pérdida de detalle y artefactos"
+        },
+        {
+          "id": "o2",
+          "text": "Reducir el tamaño manteniendo igualdad exacta de todos los píxeles"
+        },
+        {
+          "id": "o3",
+          "text": "Aumentar la calidad original eliminando información de forma irreversible"
+        },
+        {
+          "id": "o4",
+          "text": "Evitar la descompresión porque los píxeles comprimidos se muestran directamente"
+        }
+      ],
+      "correct_option_id": "o1",
+      "explanation": "La compresión con pérdida descarta información. Una reducción de tamaño mayor puede hacer visibles errores de reconstrucción; ampliar después el archivo no recupera los datos originales.",
+      "distractor_rationales": {
+        "o2": "JPEG convencional es con pérdida; esa igualdad exacta no está garantizada.",
+        "o3": "Descartar información no crea detalle original nuevo.",
+        "o4": "La información codificada necesita decodificarse para reconstruir la imagen."
+      },
+      "source": "Tema2-DISM-2.pdf, páginas PDF 32, 34–35.",
+      "source_file": "Tema2-DISM-2.pdf",
+      "source_pages": "32, 34–35",
+      "source_type": "pdf",
+      "reference_url": null,
+      "shuffle_options": true
+    },
+    {
+      "id": "t22-30",
+      "block": "t22",
+      "tag": "Percepción y compresión de imágenes",
+      "objective": "Percepción y compresión de imágenes",
+      "level": "Comprensión",
+      "stem": "¿Qué propiedad de la visión humana aprovecha la compresión JPEG descrita en el tema?",
+      "options": [
+        {
+          "id": "o1",
+          "text": "La mayor sensibilidad a variaciones de luminancia que de crominancia"
+        },
+        {
+          "id": "o2",
+          "text": "La mayor sensibilidad a cambios de color que a cambios de brillo"
+        },
+        {
+          "id": "o3",
+          "text": "La incapacidad de percibir detalles en cualquier zona uniforme"
+        },
+        {
+          "id": "o4",
+          "text": "La percepción idéntica de todas las frecuencias y componentes de la imagen"
+        }
+      ],
+      "correct_option_id": "o1",
+      "explanation": "La visión no responde por igual al brillo y al color ni a todas las variaciones espaciales. Esa diferencia permite reducir información perceptivamente menos relevante.",
+      "distractor_rationales": {
+        "o2": "Invierte la relación perceptiva que presenta el tema.",
+        "o3": "El tema indica que pequeñas variaciones de brillo se perciben con facilidad en zonas homogéneas.",
+        "o4": "La compresión perceptiva aprovecha precisamente sensibilidades diferentes."
+      },
+      "source": "Tema2-DISM-2.pdf, páginas PDF 35.",
+      "source_file": "Tema2-DISM-2.pdf",
+      "source_pages": "35",
+      "source_type": "pdf",
+      "reference_url": null,
+      "shuffle_options": true
+    },
+    {
+      "id": "t22-31",
+      "block": "t22",
+      "tag": "Memoria y datos multimedia",
+      "objective": "Memoria y datos multimedia",
+      "level": "Aplicación",
+      "stem": "Una MMA recorre grandes flujos de datos con poca reutilización temporal. ¿Por qué sigue necesitando gran ancho de banda de memoria?",
+      "options": [
+        {
+          "id": "o1",
+          "text": "Debe alimentar continuamente el procesamiento con muchos datos nuevos"
+        },
+        {
+          "id": "o2",
+          "text": "La baja reutilización garantiza que todos los datos estarán siempre en caché"
+        },
+        {
+          "id": "o3",
+          "text": "Los operandos pequeños hacen innecesaria la transferencia de datos"
+        },
+        {
+          "id": "o4",
+          "text": "El procesador puede reconstruir todos los datos sin leer memoria"
+        }
+      ],
+      "correct_option_id": "o1",
+      "explanation": "Las MMA pueden reutilizar el código de sus bucles y, al mismo tiempo, consumir datos nuevos a gran ritmo. Eso exige memoria y E/S capaces de sostener el flujo.",
+      "distractor_rationales": {
+        "o2": "La poca reutilización temporal reduce la ayuda de guardar copias para accesos repetidos.",
+        "o3": "Aunque cada operando sea pequeño, se procesan muchos y con frecuencia.",
+        "o4": "El cómputo necesita recibir los datos de entrada del flujo."
+      },
+      "source": "Tema2-DISM-2.pdf, páginas PDF 44–46.",
+      "source_file": "Tema2-DISM-2.pdf",
+      "source_pages": "44–46",
+      "source_type": "pdf",
+      "reference_url": null,
+      "shuffle_options": true
+    },
+    {
+      "id": "t31-21",
+      "block": "t31",
+      "tag": "Componentes del móvil: SoC",
+      "objective": "Componentes del móvil: SoC",
+      "level": "Comprensión",
+      "stem": "¿Qué describe un System-on-Chip (SoC) de un smartphone?",
+      "options": [
+        {
+          "id": "o1",
+          "text": "Un chip que integra varios bloques, como CPU, GPU, módem y otros procesadores"
+        },
+        {
+          "id": "o2",
+          "text": "La memoria flash donde se instalan todas las aplicaciones"
+        },
+        {
+          "id": "o3",
+          "text": "La capa táctil que detecta la posición del dedo"
+        },
+        {
+          "id": "o4",
+          "text": "Una batería que proporciona distintos voltajes al teléfono"
+        }
+      ],
+      "correct_option_id": "o1",
+      "explanation": "Un SoC agrupa funciones que podrían requerir varios componentes: procesamiento general, gráficos, comunicaciones y otros aceleradores. No equivale al almacenamiento o a la batería.",
+      "distractor_rationales": {
+        "o2": "La flash es almacenamiento; un SoC integra bloques de procesamiento y control.",
+        "o3": "La detección de toque pertenece a la interfaz de pantalla, no define un SoC.",
+        "o4": "La batería alimenta el sistema, pero no es el chip de procesamiento integrado."
+      },
+      "source": "Tema3-DISM-1.pdf, páginas PDF 4.",
+      "source_file": "Tema3-DISM-1.pdf",
+      "source_pages": "4",
+      "source_type": "pdf",
+      "reference_url": null,
+      "shuffle_options": true
+    },
+    {
+      "id": "t31-22",
+      "block": "t31",
+      "tag": "RAM y almacenamiento flash",
+      "objective": "RAM y almacenamiento flash",
+      "level": "Comprensión",
+      "stem": "En un smartphone, ¿qué diferencia funcional hay entre RAM y almacenamiento flash?",
+      "options": [
+        {
+          "id": "o1",
+          "text": "RAM: datos temporales de trabajo; flash: almacenamiento persistente"
+        },
+        {
+          "id": "o2",
+          "text": "RAM: almacenamiento no volátil; flash: datos temporales de la app"
+        },
+        {
+          "id": "o3",
+          "text": "RAM y flash son volátiles y se borran al apagar el móvil"
+        },
+        {
+          "id": "o4",
+          "text": "RAM y flash son persistentes y solo cambia su velocidad"
+        }
+      ],
+      "correct_option_id": "o1",
+      "explanation": "La RAM se utiliza como memoria de trabajo volátil. El almacenamiento flash conserva datos de forma no volátil y no tiene partes móviles.",
+      "distractor_rationales": {
+        "o2": "Invierte las propiedades de memoria de trabajo y almacenamiento persistente.",
+        "o3": "La flash conserva datos sin alimentación; no es memoria de trabajo volátil.",
+        "o4": "La RAM de trabajo no conserva sus datos sin alimentación."
+      },
+      "source": "Tema3-DISM-1.pdf, páginas PDF 4.",
+      "source_file": "Tema3-DISM-1.pdf",
+      "source_pages": "4",
+      "source_type": "pdf",
+      "reference_url": null,
+      "shuffle_options": true
+    },
+    {
+      "id": "t31-23",
+      "block": "t31",
+      "tag": "Procesamiento de IA en el dispositivo",
+      "objective": "Procesamiento de IA en el dispositivo",
+      "level": "Comprensión",
+      "stem": "¿Qué bloque del SoC está especializado en ejecutar redes neuronales en el propio móvil?",
+      "options": [
+        {
+          "id": "o1",
+          "text": "La NPU"
+        },
+        {
+          "id": "o2",
+          "text": "El módem"
+        },
+        {
+          "id": "o3",
+          "text": "La memoria flash"
+        },
+        {
+          "id": "o4",
+          "text": "El controlador táctil"
+        }
+      ],
+      "correct_option_id": "o1",
+      "explanation": "La NPU acelera operaciones de redes neuronales. Que exista una NPU no implica que todo modelo o servicio de IA pueda funcionar sin conexión.",
+      "distractor_rationales": {
+        "o2": "El módem se ocupa de comunicaciones radio, no es el acelerador especializado en redes neuronales.",
+        "o3": "Almacena datos y aplicaciones; no ejecuta por sí misma las operaciones de inferencia.",
+        "o4": "Detecta y comunica interacciones de toque, no es la unidad especializada en IA."
+      },
+      "source": "Tema3-DISM-1.pdf, páginas PDF 4, 8.",
+      "source_file": "Tema3-DISM-1.pdf",
+      "source_pages": "4, 8",
+      "source_type": "pdf",
+      "reference_url": null,
+      "shuffle_options": true
+    },
+    {
+      "id": "t31-24",
+      "block": "t31",
+      "tag": "Comparativa LCD y AMOLED",
+      "objective": "Comparativa LCD y AMOLED",
+      "level": "Aplicación",
+      "stem": "¿Qué ventaja de LCD IPS frente a AMOLED recoge la comparativa del tema?",
+      "options": [
+        {
+          "id": "o1",
+          "text": "Menor coste y mayor estabilidad frente al quemado de una imagen fija"
+        },
+        {
+          "id": "o2",
+          "text": "Negro real obtenido al apagar individualmente los píxeles emisores"
+        },
+        {
+          "id": "o3",
+          "text": "Panel autoemisivo más delgado por carecer de retroiluminación"
+        },
+        {
+          "id": "o4",
+          "text": "Ahorro de consumo al apagar todos los píxeles de las zonas negras"
+        }
+      ],
+      "correct_option_id": "o1",
+      "explanation": "El cuadro comparativo destaca menor coste y estabilidad de LCD frente al posible quemado de AMOLED. La elección cambia si se priorizan negros, flexibilidad o consumo con imágenes oscuras.",
+      "distractor_rationales": {
+        "o2": "Esa propiedad corresponde a OLED/AMOLED, no a LCD retroiluminado.",
+        "o3": "La ausencia de retroiluminación caracteriza a OLED/AMOLED.",
+        "o4": "Ese mecanismo corresponde a los píxeles emisores de OLED/AMOLED, no al LCD."
+      },
+      "source": "Tema3-DISM-1.pdf, páginas PDF 68, 72.",
+      "source_file": "Tema3-DISM-1.pdf",
+      "source_pages": "68, 72",
+      "source_type": "pdf",
+      "reference_url": null,
+      "shuffle_options": true
+    },
+    {
+      "id": "t31-25",
+      "block": "t31",
+      "tag": "Bluetooth e interferencias",
+      "objective": "Bluetooth e interferencias",
+      "level": "Aplicación",
+      "stem": "Un móvil utiliza WiFi en 2,4 GHz mientras transmite audio por Bluetooth. ¿Por qué puede aparecer un problema de coexistencia?",
+      "options": [
+        {
+          "id": "o1",
+          "text": "Ambas tecnologías comparten parte de la banda radioeléctrica"
+        },
+        {
+          "id": "o2",
+          "text": "Bluetooth y WiFi interpretan necesariamente todos los mensajes del otro"
+        },
+        {
+          "id": "o3",
+          "text": "La interferencia depende de que ambos usen la misma dirección IP"
+        },
+        {
+          "id": "o4",
+          "text": "Bluetooth necesita alineación óptica y el WiFi la interrumpe"
+        }
+      ],
+      "correct_option_id": "o1",
+      "explanation": "Bluetooth y WiFi en 2,4 GHz pueden interferirse. La coexistencia radio ayuda a reducir ese efecto. No significa que toda red celular opere en 2,4 GHz ni que cualquier conexión móvil produzca la misma interferencia.",
+      "distractor_rationales": {
+        "o2": "Compartir banda no significa utilizar el mismo protocolo ni entender sus mensajes.",
+        "o3": "El problema de radio no exige compartir una dirección de red.",
+        "o4": "Bluetooth utiliza radiofrecuencia, no un enlace óptico alineado."
+      },
+      "source": "Tema3-DISM-1.pdf, páginas PDF 77–78. Contraste: https://support.apple.com/en-us/102319",
+      "source_file": "Tema3-DISM-1.pdf",
+      "source_pages": "77–78",
+      "source_type": "pdf",
+      "reference_url": "https://support.apple.com/en-us/102319",
+      "shuffle_options": true
+    },
+    {
+      "id": "t31-26",
+      "block": "t31",
+      "tag": "Coexistencia de radios de un móvil",
+      "objective": "Coexistencia de radios de un móvil",
+      "level": "Aplicación",
+      "stem": "En un terminal con radios Bluetooth y celular próximas, el diseño incorpora mecanismos de coexistencia. ¿Qué problema de radio pretenden reducir?",
+      "options": [
+        {
+          "id": "o1",
+          "text": "Que la actividad de una radio degrade la recepción de la otra"
+        },
+        {
+          "id": "o2",
+          "text": "Que los dispositivos deban utilizar el mismo códec de vídeo"
+        },
+        {
+          "id": "o3",
+          "text": "Que las aplicaciones compartan los mismos permisos de almacenamiento"
+        },
+        {
+          "id": "o4",
+          "text": "Que ambos servicios deban facturarse mediante una misma suscripción"
+        }
+      ],
+      "correct_option_id": "o1",
+      "explanation": "Las radios coubicadas pueden perjudicarse según sus bandas y condiciones. La especificación Bluetooth contempla mecanismos de coordinación con otras tecnologías, incluida la celular; no se pregunta por versiones ni por una interferencia universal.",
+      "distractor_rationales": {
+        "o2": "La coexistencia trata interferencias radio, no imponer un códec multimedia común.",
+        "o3": "Los permisos de archivos son una cuestión de software distinta.",
+        "o4": "La coordinación radio no establece el modelo comercial de los servicios."
+      },
+      "source": "Tema3-DISM-1.pdf, páginas PDF 77–79. Contraste: https://www.bluetooth.com/wp-content/uploads/Files/Specification/HTML/Core-62/out/en/architecture%2C-change-history%2C-and-conventions/architecture.html",
+      "source_file": "Tema3-DISM-1.pdf",
+      "source_pages": "77–79",
+      "source_type": "pdf",
+      "reference_url": "https://www.bluetooth.com/wp-content/uploads/Files/Specification/HTML/Core-62/out/en/architecture%2C-change-history%2C-and-conventions/architecture.html",
+      "shuffle_options": true
+    },
+    {
+      "id": "t31-27",
+      "block": "t31",
+      "tag": "WiFi frente a ANT/ANT+",
+      "objective": "WiFi frente a ANT/ANT+",
+      "level": "Aplicación",
+      "stem": "Se conecta un pulsómetro que envía pequeñas medidas y se quiere maximizar la autonomía. ¿Qué propiedad de ANT/ANT+ lo hace adecuado frente a usar una red WiFi para ese sensor?",
+      "options": [
+        {
+          "id": "o1",
+          "text": "Su diseño para sensores de bajo consumo y pequeños mensajes"
+        },
+        {
+          "id": "o2",
+          "text": "Su obligación de transmitir archivos de vídeo de gran tamaño"
+        },
+        {
+          "id": "o3",
+          "text": "Su capacidad de comunicarse únicamente mediante cable"
+        },
+        {
+          "id": "o4",
+          "text": "Su independencia de cualquier perfil de datos en ANT+"
+        }
+      ],
+      "correct_option_id": "o1",
+      "explanation": "ANT prioriza sensores de bajo consumo; ANT+ añade perfiles interoperables. WiFi resulta más adecuado para una red local con mayores volúmenes de información.",
+      "distractor_rationales": {
+        "o2": "ANT se orienta a redes de sensores de baja tasa, no a grandes flujos audiovisuales.",
+        "o3": "ANT es una tecnología inalámbrica.",
+        "o4": "ANT+ aporta perfiles compartidos; no prescinde de ellos."
+      },
+      "source": "Tema3-DISM-1.pdf, páginas PDF 83–85, 88. Contraste: https://developer.garmin.com/ant-program/ant-ant-plus/",
+      "source_file": "Tema3-DISM-1.pdf",
+      "source_pages": "83–85, 88",
+      "source_type": "pdf",
+      "reference_url": "https://developer.garmin.com/ant-program/ant-ant-plus/",
+      "shuffle_options": true
+    },
+    {
+      "id": "t31-28",
+      "block": "t31",
+      "tag": "Alcance de tecnologías inalámbricas",
+      "objective": "Alcance de tecnologías inalámbricas",
+      "level": "Aplicación",
+      "stem": "¿Qué comparación de alcance entre un enlace WiFi y otro ANT+ está bien planteada?",
+      "options": [
+        {
+          "id": "o1",
+          "text": "Debe considerar potencia, antenas, entorno y características de ambos equipos"
+        },
+        {
+          "id": "o2",
+          "text": "El nombre ANT+ garantiza más distancia que cualquier equipo WiFi"
+        },
+        {
+          "id": "o3",
+          "text": "Usar la misma banda garantiza exactamente la misma cobertura"
+        },
+        {
+          "id": "o4",
+          "text": "WiFi tiene siempre alcance ilimitado si existe acceso a Internet"
+        }
+      ],
+      "correct_option_id": "o1",
+      "explanation": "No se puede asignar una distancia universal a una tecnología sin indicar condiciones y hardware. ANT/ANT+ se orienta a sensores de bajo consumo y WiFi a redes locales; una mayor tasa nominal tampoco equivale por sí sola a más alcance.",
+      "distractor_rationales": {
+        "o2": "No existe esa garantía universal por el nombre del protocolo.",
+        "o3": "Además de la frecuencia influyen potencia, antenas, sensibilidad y obstáculos.",
+        "o4": "El acceso a Internet no elimina el alcance limitado del enlace radio local."
+      },
+      "source": "Tema3-DISM-1.pdf, páginas PDF 74–75, 83, 88–94.",
+      "source_file": "Tema3-DISM-1.pdf",
+      "source_pages": "74–75, 83, 88–94",
+      "source_type": "pdf",
+      "reference_url": null,
+      "shuffle_options": true
+    },
+    {
+      "id": "t31-29",
+      "block": "t31",
+      "tag": "RFID y lectura NFC compatible",
+      "objective": "RFID y lectura NFC compatible",
+      "level": "Aplicación",
+      "stem": "Una etiqueta RFID de alta frecuencia funciona a 13,56 MHz y usa un protocolo admitido por el lector NFC. Sin restricciones adicionales de acceso, ¿qué se puede afirmar?",
+      "options": [
+        {
+          "id": "o1",
+          "text": "El lector NFC puede comunicarse con esa etiqueta compatible"
+        },
+        {
+          "id": "o2",
+          "text": "Un lector NFC nunca puede leer ningún tipo de etiqueta RFID"
+        },
+        {
+          "id": "o3",
+          "text": "La etiqueta debe cambiar obligatoriamente a UHF para ser leída por NFC"
+        },
+        {
+          "id": "o4",
+          "text": "La coincidencia de frecuencia permitiría leer cualquier RFID aunque cambie el protocolo"
+        }
+      ],
+      "correct_option_id": "o1",
+      "explanation": "RFID es una familia amplia. NFC admite ciertos protocolos HF a 13,56 MHz, por lo que la respuesta no es un «no» absoluto: importa qué etiqueta, protocolo y lector se utilizan.",
+      "distractor_rationales": {
+        "o2": "NFC puede comunicarse con determinadas tarjetas y etiquetas RFID HF compatibles.",
+        "o3": "NFC trabaja a 13,56 MHz; cambiar a UHF impediría ese enlace.",
+        "o4": "Coincidir en frecuencia no sustituye la compatibilidad de protocolo."
+      },
+      "source": "Tema3-DISM-1.pdf, páginas PDF 95, 100–105. Contraste: https://nfc-forum.org/learn/nfc-technology/",
+      "source_file": "Tema3-DISM-1.pdf",
+      "source_pages": "95, 100–105",
+      "source_type": "pdf",
+      "reference_url": "https://nfc-forum.org/learn/nfc-technology/",
+      "shuffle_options": true
+    },
+    {
+      "id": "t31-30",
+      "block": "t31",
+      "tag": "RFID de largo alcance y NFC",
+      "objective": "RFID de largo alcance y NFC",
+      "level": "Aplicación",
+      "stem": "Un inventario usa etiquetas RFID UHF y otro sistema usa NFC a 13,56 MHz. ¿Qué conclusión es correcta sobre el lector NFC por sí solo?",
+      "options": [
+        {
+          "id": "o1",
+          "text": "No lee esas etiquetas UHF porque opera en otra banda y con otros protocolos"
+        },
+        {
+          "id": "o2",
+          "text": "Puede leerlas porque todas las tecnologías RFID operan a 13,56 MHz"
+        },
+        {
+          "id": "o3",
+          "text": "Puede leerlas si se aumenta el tamaño del mensaje NFC"
+        },
+        {
+          "id": "o4",
+          "text": "Puede leerlas únicamente porque las etiquetas son pasivas"
+        }
+      ],
+      "correct_option_id": "o1",
+      "explanation": "Un lector NFC no es un lector universal de RFID. El caso UHF queda fuera de su enlace de 13,56 MHz. Esto no contradice que pueda leer determinadas etiquetas RFID HF compatibles.",
+      "distractor_rationales": {
+        "o2": "RFID incluye distintas bandas; UHF no es la banda HF de NFC.",
+        "o3": "Cambiar el tamaño de los datos no convierte el receptor HF en uno UHF.",
+        "o4": "Ser pasiva no implica compatibilidad de frecuencia o protocolo."
+      },
+      "source": "Tema3-DISM-1.pdf, páginas PDF 95, 97, 100–105.",
+      "source_file": "Tema3-DISM-1.pdf",
+      "source_pages": "95, 97, 100–105",
+      "source_type": "pdf",
+      "reference_url": null,
+      "shuffle_options": true
+    },
+    {
+      "id": "t31-31",
+      "block": "t31",
+      "tag": "Bandas RFID: LF, HF y UHF",
+      "objective": "Bandas RFID: LF, HF y UHF",
+      "level": "Comprensión",
+      "stem": "En la clasificación RFID del temario, ¿a qué banda pertenece una etiqueta que trabaja aproximadamente a 125 kHz?",
+      "options": [
+        {
+          "id": "o1",
+          "text": "LF (baja frecuencia)"
+        },
+        {
+          "id": "o2",
+          "text": "HF (alta frecuencia)"
+        },
+        {
+          "id": "o3",
+          "text": "UHF (ultraalta frecuencia)"
+        },
+        {
+          "id": "o4",
+          "text": "Microondas"
+        }
+      ],
+      "correct_option_id": "o1",
+      "explanation": "La figura sitúa aproximadamente 125–134 kHz en LF y 13,56 MHz en HF. Las distancias de las ilustraciones son ejemplos de sistemas y condiciones, no un alcance universal de cada banda.",
+      "distractor_rationales": {
+        "o2": "La banda HF mostrada utiliza 13,56 MHz, no unos 125 kHz.",
+        "o3": "UHF corresponde a frecuencias mucho mayores, del orden de cientos de MHz.",
+        "o4": "Los ejemplos de microondas de la tabla trabajan en GHz, no en kHz."
+      },
+      "source": "Tema3-DISM-1.pdf, páginas PDF 98, 105.",
+      "source_file": "Tema3-DISM-1.pdf",
+      "source_pages": "98, 105",
+      "source_type": "pdf",
+      "reference_url": null,
+      "shuffle_options": true
+    },
+    {
+      "id": "t31-32",
+      "block": "t31",
+      "tag": "NFC y pequeños intercambios",
+      "objective": "NFC y pequeños intercambios",
+      "level": "Aplicación",
+      "stem": "Se acerca un teléfono a una etiqueta NFC para abrir información de una exposición. ¿Qué uso es coherente con sus intercambios breves y de bajo volumen?",
+      "options": [
+        {
+          "id": "o1",
+          "text": "Leer una dirección web y descargar después el contenido mediante otra conexión"
+        },
+        {
+          "id": "o2",
+          "text": "Recibir toda una película de alta resolución como flujo continuo por la etiqueta"
+        },
+        {
+          "id": "o3",
+          "text": "Mantener el vídeo de una videollamada a varios metros por el mismo enlace"
+        },
+        {
+          "id": "o4",
+          "text": "Sustituir con esa etiqueta la cobertura de una red WiFi de todo el edificio"
+        }
+      ],
+      "correct_option_id": "o1",
+      "explanation": "Una etiqueta puede guardar una URL o datos pequeños. El contenido voluminoso se obtiene después por la red apropiada; no debe confundirse compartir un enlace con transmitir el archivo entero.",
+      "distractor_rationales": {
+        "o2": "NFC no se orienta a transportar continuamente grandes volúmenes audiovisuales.",
+        "o3": "El alcance y el tipo de tráfico no corresponden al uso NFC descrito.",
+        "o4": "Una interacción de campo cercano no proporciona una red local de ese alcance."
+      },
+      "source": "Tema3-DISM-1.pdf, páginas PDF 100–103.",
+      "source_file": "Tema3-DISM-1.pdf",
+      "source_pages": "100–103",
+      "source_type": "pdf",
+      "reference_url": null,
+      "shuffle_options": true
+    },
+    {
+      "id": "t31-33",
+      "block": "t31",
+      "tag": "Meta-wearable y tolerancia a fallos",
+      "objective": "Meta-wearable y tolerancia a fallos",
+      "level": "Aplicación",
+      "stem": "En una prenda con sensores interconectados se detecta un fallo del bus. ¿Qué comportamiento de tolerancia a fallos plantea el material?",
+      "options": [
+        {
+          "id": "o1",
+          "text": "Reconocer el fallo y establecer un camino alternativo de comunicación"
+        },
+        {
+          "id": "o2",
+          "text": "Dar por válidas las medidas sin comprobar que sigan llegando"
+        },
+        {
+          "id": "o3",
+          "text": "Exigir que el usuario sustituya manualmente todas las fibras tras cada medida"
+        },
+        {
+          "id": "o4",
+          "text": "Eliminar las interconexiones para que cada sensor deje de enviar datos"
+        }
+      ],
+      "correct_option_id": "o1",
+      "explanation": "El meta-wearable se plantea como una red distribuida en la prenda. Detectar el fallo y disponer de otra ruta evita depender de una única conexión.",
+      "distractor_rationales": {
+        "o2": "Ignorar la pérdida de comunicación no proporciona tolerancia al fallo.",
+        "o3": "No es el funcionamiento de recuperación de la red que describe el tema.",
+        "o4": "La solución intenta conservar la comunicación, no suprimirla."
+      },
+      "source": "Tema3-DISM-1.pdf, páginas PDF 42–44.",
+      "source_file": "Tema3-DISM-1.pdf",
+      "source_pages": "42–44",
+      "source_type": "pdf",
+      "reference_url": null,
+      "shuffle_options": true
+    },
+    {
+      "id": "t4-01",
+      "block": "t4",
+      "tag": "Qué es OpenAPI",
+      "objective": "Qué es OpenAPI",
+      "level": "Comprensión",
+      "stem": "¿Qué es OpenAPI?",
+      "options": [
+        {
+          "id": "o1",
+          "text": "Un estándar abierto para describir interfaces de APIs HTTP"
+        },
+        {
+          "id": "o2",
+          "text": "Un servidor que ejecuta automáticamente cualquier API HTTP"
+        },
+        {
+          "id": "o3",
+          "text": "Un lenguaje de programación para implementar la lógica de una API"
+        },
+        {
+          "id": "o4",
+          "text": "Un protocolo de transporte de audio y vídeo en tiempo real"
+        }
+      ],
+      "correct_option_id": "o1",
+      "explanation": "OpenAPI Specification permite describir operaciones, parámetros, respuestas y otros aspectos de una API HTTP de forma comprensible para personas y herramientas. Es independiente del lenguaje de implementación y suele expresarse en JSON o YAML.",
+      "distractor_rationales": {
+        "o2": "OpenAPI describe una interfaz; no es por sí mismo el servidor que la implementa.",
+        "o3": "La descripción es independiente del lenguaje de implementación.",
+        "o4": "No es un protocolo multimedia como RTP, sino un estándar de descripción de APIs."
+      },
+      "source": "OpenAPI Initiative · What is OpenAPI? · What is OpenAPI?. Contraste: https://www.openapis.org/what-is-openapi",
+      "source_file": "OpenAPI Initiative · What is OpenAPI?",
+      "source_pages": "What is OpenAPI?",
+      "source_type": "web",
+      "reference_url": "https://www.openapis.org/what-is-openapi",
       "shuffle_options": true
     }
   ]

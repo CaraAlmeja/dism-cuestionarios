@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#7460d8">
-  <meta name="description" content="Practica DISM con 100 preguntas explicadas, tests por tema, simulacros y repaso de errores. Ingeniería Multimedia, Universidad de Alicante.">
+  <meta name="description" content="Practica DISM con preguntas explicadas y temario actualizado, tests por tema, simulacros y repaso de errores. Ingeniería Multimedia, Universidad de Alicante.">
   <title>DISM Lab · Tu espacio de estudio</title>
   <script src="./theme.js"></script>
   <link rel="icon" type="image/svg+xml" href="./icon.svg">
@@ -20,7 +20,7 @@
     <div class="nav-label">MI APRENDIZAJE</div>
     <nav aria-label="Navegación principal">
       <a href="#inicio" data-nav="inicio"><span data-icon="grid"></span>Vista general</a>
-      <a href="#temas" data-nav="temas"><span data-icon="layers"></span>Cuestionarios<span class="nav-count">5</span></a>
+      <a href="#temas" data-nav="temas"><span data-icon="layers"></span>Cuestionarios<span id="topic-count" class="nav-count">6</span></a>
       <a href="#fallos" data-nav="fallos"><span data-icon="refresh"></span>Mis fallos<span id="error-count" class="nav-count">0</span></a>
       <a href="#progreso" data-nav="progreso"><span data-icon="chart"></span>Mi progreso</a>
     </nav>
@@ -45,6 +45,6 @@
   </div>
   <div id="toast" role="status" aria-live="polite"></div>
   <dialog id="confirm-dialog"><form method="dialog"><span class="dialog-icon" data-icon="help"></span><h2 id="dialog-title"></h2><p id="dialog-text"></p><div class="dialog-actions"><button value="cancel" class="button secondary">Cancelar</button><button value="confirm" class="button primary" id="dialog-confirm">Confirmar</button></div></form></dialog>
-  <script type="module" src="./app.js"></script>
+  <script type="module" src="./app.js?v=repaso-2"></script>
 </body>
 </html>

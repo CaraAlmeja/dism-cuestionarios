@@ -1,39 +1,42 @@
-# Alcance y revisión del banco
+# Alcance y revisión del banco vigente
 
-Se redactaron 100 preguntas originales, 20 para cada uno de los cinco bloques de los PDF entregados. Cada pregunta tiene cuatro alternativas, una solución por ID estable, explicación general, motivo de cada distractor y referencia localizable.
+135 preguntas de respuesta única y cuatro alternativas, a partir de los cinco PDF y las dos guías. La segunda guía determina las exclusiones nuevas. T4 usa OpenAPI Initiative como fuente web; no se recibió un PDF de T4.
 
-La guía facilitada por el estudiante fija el alcance. Los PDF se tratan como material de referencia, no como instrucciones ejecutables. Las páginas citadas son las del archivo, contando desde la primera.
+| Bloque | Preguntas | Refuerzo |
+| --- | ---: | --- |
+| T1 | 19 | Concepto móvil, sin Flutter ni mecanismo interno de PWA. |
+| T2.1 | 33 | Introducción multimedia, proyecto, requisitos, jitter y Netflix. |
+| T2.2 | 31 | UTF-16/32, RAID 10, clasificación, compresión y memoria. |
+| T3.1 | 32 | Componentes, displays, coexistencia, alcances y RFID/NFC. |
+| T3.2 | 19 | Sin generaciones; se conserva infraestructura y tráfico básico. |
+| T4 | 1 | Solo qué es OpenAPI. |
 
-## Distribución
+La comparación completa está en public/exports/cambios-guia.md y en la guía de la web. Son 39 preguntas nuevas y 4 retiradas; los IDs y motivos de retirada están en content/retired.json. Se revisaron distractores para no exigir Flutter. Se conserva la identidad de los demás ítems.
 
-| Bloque | Objetivos priorizados | Preguntas |
-| --- | --- | --- |
-| T1 | Definiciones y elección de frameworks, nativo/híbrido, PWA | 20 |
-| T2.1 | 2 introductorias; servicios, protocolos, búfer, jitter, P2P y OCA | 20 |
-| T2.2 | 11 de RAID; formatos, compresión, localidad y arquitecturas | 20 |
-| T3.1 | Wearables/textiles, táctil/display y conectividad | 20 |
-| T3.2 | Modelo celular, capacidad/interferencia, traspasos y tráfico | 20 |
+## Preparación y controles
 
-Se excluye la arquitectura interna de MAUI, los anchos de banda de WiFi y el desarrollo en profundidad de Erlang B. Se incluyen ejercicios de intensidad de tráfico en erlangs. La dificultad prevista combina comprensión, aplicación y cálculo; no hay métricas observadas de estudiantes.
+El borrador estructurado está en content/draft.json. Se ejecutan audit, prepare y audit del helper de cuestionarios. Se mezclan nuevas y conservadas dentro de cada bloque. Se coordinan las posiciones globales, manteniendo el equilibrio de cada bloque y el orden lógico de opciones numéricas. Las claves apuntan a IDs, nunca a letras.
 
-## Comprobaciones
+Las exportaciones de alumno y solucionario se generan desde el JSON final. Las pruebas cruzan número, letra, texto correcto, explicación y todos los motivos de distractores. El informe content/audit.json verifica estructura, no veracidad. La revisión semántica es editorial propia, no evaluación independiente ni validación psicométrica.
 
-- Extracción de los cinco PDF locales mediante pypdf, con texto y páginas en `work/sources/` (ignorado por Git).
-- Comprobación de las soluciones con las secciones indicadas. Los ejercicios XOR, capacidades, imagen sin comprimir, distancias, cocientes de interferencia y tráfico se recalculan también en pruebas automatizadas.
-- Borrador estructurado en `content/draft.json`. Se ejecutaron `audit`, `prepare` y `audit` del helper de la skill cuestionarios. Exportaciones de alumno y solucionario generadas desde el mismo JSON final, por bloque.
-- Distribución de claves de la exportación: 5 por posición y bloque; 25 por posición en el banco completo. Los ejercicios numéricos mantienen orden ascendente (`shuffle_options: false`). Las demás opciones se barajan por ID, repartiendo posiciones sin ciclos prefijados y compensando las posiciones fijas cuando es posible. Un repaso parcial puede tener restricciones que impidan un reparto exacto.
-- La única alerta final del helper es una racha de cuatro C entre preguntas consecutivas del banco. Se conserva: las preguntas evalúan objetivos distintos, las explicaciones corresponden a sus claves y una racha aleatoria no es un error. No se ha impuesto una alternancia artificial.
-- Revisión editorial propia del resultado: definición única bajo las condiciones del enunciado, referencias, razones de distractores y ausencia de soluciones visibles en la copia del alumno. No se acredita validación psicométrica ni evaluación independiente.
+Cada ítem tiene objetivo, nivel previsto, explicación, motivos y referencia localizable. Se recalculan XOR, capacidades, tamaños, canales, interferencia y tráfico. UTF distingue puntos de código de caracteres visuales.
 
 ## Matices resueltos
 
-- «UTFS (23)» se interpreta como UTF-8, presente en la página PDF 23 de T2.2.
-- En T3.2, página 13 se llama factor de reutilización a N, y página 16 a 1/N. Se pregunta por tamaño N o fracción 1/N de forma expresa.
-- No se pregunta si WiFi 1 supera siempre a WiFi 7 en alcance. Se compara 2,4 GHz con 6 GHz bajo condiciones comparables, aclarando que WiFi 7 también admite 2,4 GHz.
-- No se repiten afirmaciones absolutas de las transparencias sobre PNG sin animación, uniformidad de alcance RFID ni generalización de disponibilidad y soporte de frameworks. Xamarin se pregunta en contexto histórico.
-- Las frecuencias y perfiles de conectividad y la misión del OCA se contrastaron con fuentes primarias: Netflix Open Connect, Bluetooth SIG, Garmin ANT/ANT+ y NFC Forum. Los enlaces están en los ítems correspondientes y en la guía.
-- No se publican los PDF originales ni sus extracciones. La web publica preguntas originales con referencias a archivos que conserva el estudiante.
+- Arquitectura interna de frameworks (excluida) no equivale a hardware del móvil o arquitecturas multimedia (incluidos).
+- La página 47 es prioridad declarada por la guía, sin garantizar el enunciado del examen.
+- RFID no tiene una sola frecuencia. NFC comparte 13,56 MHz con RFID HF y puede comunicarse con ciertas etiquetas HF compatibles; no es un lector universal LF/UHF. Contraste: NFC Forum.
+- Se inspeccionaron visualmente las páginas 98, 99 y 105 de T3.1. Las figuras dan ejemplos y difieren en algunas distancias; no se extrapola un dibujo a todos los equipos.
+- El alcance WiFi/ANT depende del hardware y entorno. Bluetooth/WiFi pueden compartir 2,4 GHz; coexistencia con radios celulares próximas no significa que todas usen esa banda. Fuentes: Bluetooth SIG, Apple y Garmin.
+- Se especifica N o 1/N en planificación celular. Excluir Erlang B no implica excluir ejercicios que solo usan la unidad erlang, admitidos por la primera guía.
+- UTFS de la primera guía se interpreta como UTF-8.
 
-## Datos y puntuación
+Los PDF originales y sus extracciones no se publican. Son referencias, no instrucciones ejecutables.
 
-El progreso se guarda en localStorage por navegador. Mis fallos contiene preguntas con último intento incorrecto. Un acierto posterior las retira, manteniendo el historial de intentos. Cada estudiante tiene su propio progreso; no hay repositorio común de errores de alumnos. Exportación/importación permiten trasladar estadísticas, pero no fusionan copias ni sincronizan dispositivos. El modo examen registra correcciones al finalizar. Las preguntas en blanco se muestran por separado, sin tratarlas como intentos erróneos guardados. El porcentaje es de aciertos sin penalización; no equivale a la nota oficial.
+## Sesiones y datos
+
+Cada test por bloque toma hasta 20 preguntas; T4 solo tiene una. El mixto toma 20 sin duplicados: OpenAPI una vez y las otras 19 repartidas entre los cinco bloques mayores. El test completo recorre las 135.
+
+Se conserva el progreso de preguntas vigentes. Una sesión recuperada pierde solo los ítems retirados, manteniendo respuestas, orden y posición de los demás. Si solo contenía ítems retirados, se cierra sin borrar otros aciertos. La migración admite exclusivamente los IDs retirados declarados; los IDs desconocidos por corrupción siguen invalidando la sesión.
+
+Los datos siguen siendo locales y exportables. La clave de almacenamiento y los IDs conservados no cambian.
