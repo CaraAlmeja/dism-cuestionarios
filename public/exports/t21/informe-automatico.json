@@ -1,0 +1,15 @@
+{
+  "status": "sin_alertas_automaticas",
+  "errors": [],
+  "warnings": [],
+  "semantic_review": "No realizada por el script",
+  "question_count": 20,
+  "key_distribution": {
+    "4": {
+      "A": 5,
+      "B": 5,
+      "C": 5,
+      "D": 5
+    }
+  }
+}

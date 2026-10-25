@@ -1,0 +1,83 @@
+/* Tamaños y contraste para sesiones largas de estudio. */
+.page-subtitle,.hero p,.guide-panel p,.guide-panel li,.feedback p,.review-answer,.data-note{font-size:13px}
+.topic-card h3{font-size:14px;line-height:1.6}
+.topic-card>p,.mode-description,.study-strip p,.stat-card p,.topic-meta,.topic-status,.section-heading p,.source,.aside-note,.material-row p{font-size:11px}
+.button{font-size:12px;min-height:42px}
+.text-action{font-size:11px;min-height:30px}
+.topic-bottom{margin-top:auto;padding-top:13px}
+.topic-card{min-height:250px}
+.topic-meta{margin-bottom:14px}
+.topic-card .progress-track{margin:0 0 13px}
+.question-stem{font-size:20px}
+.option{font-size:14px;min-height:58px}
+.feedback h3{font-size:14px}
+.mode-label,.segmented button,.quiz-aside h2,.review-item summary,.error-item h3,.progress-row h3,.history-row{font-size:13px}
+.question-top,.tag,.result-counts,.progress-row p,.material-links,.history-row small,.question-grid button{font-size:11px}
+.page-subtitle,.topic-card>p,.topic-meta,.topic-status,.section-heading p,.stat-card p,.mode-description,.mode-label,.aside-note,.source,.study-strip p,.data-note,.guide-panel p,.guide-panel li,.review-answer,.progress-row p,.history-row small,.result-hero p,.result-counts,.error-item p{color:#74687e}
+.feedback p{color:#675775}
+.feedback .rationale{color:#9c465f}
+.topic-code,.small-pill,.section-overline{color:#7b6b89}
+.mix-card>p,.mix-card .topic-meta,.mix-card .topic-status{color:#77628b}
+.hero p{color:#c6bed8}
+.sidebar-note p,.help-link,.sidebar-footer small,.brand small,.nav-label,.breadcrumb,.course-badge,.page-footer{color:#81748f}
+.sidebar-note p,.sidebar-footer,.help-link{font-size:11px}
+.page-footer{font-size:10px}
+.resume-banner p{font-size:12px;color:#3c725b}
+.guide-panel h3{font-size:13px}
+.error-item .topic-icon{align-self:flex-start}
+.guide-panel strong{color:#564764}
+.topic-card .text-action{white-space:nowrap}
+.stats-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
+.stat-card,.stat-card>div{min-width:0}
+.stat-card p{white-space:normal;line-height:1.6}
+.topic-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+@media(max-width:900px){
+  .stats-grid,.topic-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .topic-card h3{font-size:14px}
+  .topic-card{min-height:248px}
+  .question-stem{font-size:19px}
+  .sidebar-footer,.sidebar-footer small{font-size:9px}
+  .sidebar-note p{font-size:10px}
+}
+@media(max-width:650px){
+  .page-subtitle,.hero p,.guide-panel p,.guide-panel li,.feedback p,.review-answer,.data-note{font-size:12px}
+  .hero-copy{padding:23px 18px}
+  .hero{grid-template-columns:1.25fr .8fr}
+  .hero-art{transform:scale(.9);transform-origin:right center}
+  .hero h2{font-size:22px}
+  .hero .eyebrow{font-size:8px}
+  .topic-card h3{font-size:13px}
+  .topic-card>p,.topic-meta,.topic-status,.stat-card p,.section-heading p,.mode-description,.source,.aside-note{font-size:11px}
+  .topic-card{min-height:265px;padding:15px 13px}
+  .topic-meta{gap:8px;margin-bottom:11px}
+  .topic-code{font-size:9px}
+  .topic-bottom{flex-wrap:wrap;gap:3px}
+  .text-action{font-size:11px;min-height:35px}
+  .topic-card>p{min-height:0}
+  .topic-card .text-action{min-height:29px}
+  .button,.quiz-actions .button,.quiz-header .button,.segmented button{font-size:12px}
+  .mode-label{font-size:12px}
+  .question-stem{font-size:18px}
+  .option{font-size:13px;padding:13px 11px}
+  .feedback h3{font-size:13px}
+  .question-top,.tag,.question-grid button,.progress-row p,.history-row small{font-size:10px}
+  .review-item summary,.error-item h3,.progress-row h3,.history-row{font-size:12px}
+  .material-links{font-size:11px}
+  .resume-banner p{font-size:11px}
+  .page-footer{font-size:10px}
+  .result-counts{font-size:11px}
+  .study-strip p{font-size:11px}
+  .study-strip h3{font-size:12px}
+  .study-strip>a{font-size:10px;max-width:80px}
+}
+@media(max-width:450px){
+  .hero{grid-template-columns:1fr;min-height:0}
+  .hero-art{display:none}
+  .hero-copy{padding:25px}
+  .hero h2{font-size:25px}
+  .hero p{max-width:280px}
+  .small-pill{display:none}
+}
+@media(max-width:360px){
+  .topic-grid{grid-template-columns:1fr}
+}

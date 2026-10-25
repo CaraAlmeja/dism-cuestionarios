@@ -1,0 +1,10 @@
+import { mkdir, cp, rm } from 'node:fs/promises';
+import { fileURLToPath } from 'node:url';
+import path from 'node:path';
+const root = fileURLToPath(new URL('../', import.meta.url));
+const target = path.join(root, 'dist');
+if (path.dirname(target) !== path.resolve(root)) throw new Error('Destino fuera del proyecto');
+await rm(target, { recursive: true, force: true });
+await mkdir(target, { recursive: true });
+await cp(path.join(root, 'public'), target, { recursive: true });
+console.log('Web lista en dist/');

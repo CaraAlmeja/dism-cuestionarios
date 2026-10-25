@@ -1,0 +1,98 @@
+{
+  "bank": {
+    "status": "requiere_revision",
+    "errors": [],
+    "warnings": [
+      "Racha de 4 claves C (4 opciones): revisar; puede ser azar legítimo."
+    ],
+    "semantic_review": "No realizada por el script",
+    "question_count": 100,
+    "key_distribution": {
+      "4": {
+        "A": 25,
+        "B": 25,
+        "C": 25,
+        "D": 25
+      }
+    }
+  },
+  "blocks": {
+    "t1": {
+      "status": "sin_alertas_automaticas",
+      "errors": [],
+      "warnings": [],
+      "semantic_review": "No realizada por el script",
+      "question_count": 20,
+      "key_distribution": {
+        "4": {
+          "A": 5,
+          "B": 5,
+          "C": 5,
+          "D": 5
+        }
+      }
+    },
+    "t21": {
+      "status": "sin_alertas_automaticas",
+      "errors": [],
+      "warnings": [],
+      "semantic_review": "No realizada por el script",
+      "question_count": 20,
+      "key_distribution": {
+        "4": {
+          "A": 5,
+          "B": 5,
+          "C": 5,
+          "D": 5
+        }
+      }
+    },
+    "t22": {
+      "status": "sin_alertas_automaticas",
+      "errors": [],
+      "warnings": [],
+      "semantic_review": "No realizada por el script",
+      "question_count": 20,
+      "key_distribution": {
+        "4": {
+          "A": 5,
+          "B": 5,
+          "C": 5,
+          "D": 5
+        }
+      }
+    },
+    "t31": {
+      "status": "requiere_revision",
+      "errors": [],
+      "warnings": [
+        "Racha de 4 claves C (4 opciones): revisar; puede ser azar legítimo."
+      ],
+      "semantic_review": "No realizada por el script",
+      "question_count": 20,
+      "key_distribution": {
+        "4": {
+          "A": 5,
+          "B": 5,
+          "C": 5,
+          "D": 5
+        }
+      }
+    },
+    "t32": {
+      "status": "sin_alertas_automaticas",
+      "errors": [],
+      "warnings": [],
+      "semantic_review": "No realizada por el script",
+      "question_count": 20,
+      "key_distribution": {
+        "4": {
+          "A": 5,
+          "B": 5,
+          "C": 5,
+          "D": 5
+        }
+      }
+    }
+  }
+}
