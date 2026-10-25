@@ -30,3 +30,7 @@ No se afirma que el banco esté validado psicométricamente. La revisión de con
 - Selector claro/oscuro comprobado en ambos sentidos. La elección se mantiene tras recargar; utiliza una clave independiente del progreso (`dism-lab:theme`).
 - Cuestionario revisado a 320×568, 375×812, 430×932, 667×375 y 768×1024: sin desbordamiento horizontal. En móvil los controles de respuesta quedan encima de la navegación inferior y el mapa se presenta plegado.
 - Guía, progreso y tarjetas revisados a 375 píxeles de ancho. Los nombres largos de los PDF ajustan su línea y las tarjetas se muestran en una columna en teléfonos pequeños.
+
+## Corrección del desbordamiento del mapa
+
+El mapa de 20 preguntas desbordaba internamente: con una tarjeta de 215 px, la cuadrícula disponía de 173 px pero ocupaba 198 px. La combinación de columnas `1fr`, proporción cuadrada y altura mínima de los botones imponía un ancho mínimo que no cabía. Se cambió a columnas `minmax(0,1fr)`, se eliminó esa transferencia de tamaño mediante `aspect-ratio: auto` y se ajustó el padding de los botones. El mapa largo tiene desplazamiento vertical dentro de su recuadro. La comprobación incluye los límites de la tarjeta, no solo el ancho total de la página.
