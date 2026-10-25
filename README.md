@@ -2,6 +2,8 @@
 
 Web de estudio de Diseño e Infraestructura de Sistemas Multimedia para 3.º de Ingeniería Multimedia de la Universidad de Alicante. Material independiente de apoyo, no oficial.
 
+**Web:** [Abrir DISM Lab](https://caraalmeja.github.io/dism-cuestionarios/).
+
 ## Incluye
 
 - 100 preguntas originales, 20 por bloque: T1, T2.1, T2.2, T3.1 y T3.2.

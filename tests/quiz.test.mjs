@@ -48,6 +48,14 @@ test('las sesiones de una sola pregunta no fijan la solución en A',()=>{
 });
 test('mantiene el orden lógico de opciones numéricas durante la sesión',()=>{
   const ordered=bank.filter(q=>q.shuffle_options===false);assert.ok(ordered.length>0);
+  for(const q of ordered){
+    const numbers=q.options.map(o=>{
+      const text=o.text.match(/^[\d\s.,/]+/)[0].replaceAll(' ','').replace(',','.');
+      const [a,b]=text.split('/').map(Number);return b?a/b:a;
+    });
+    assert.equal(new Set(numbers).size,4,`${q.id}: opciones numéricamente equivalentes`);
+    assert.deepEqual(numbers,[...numbers].sort((a,b)=>a-b),`${q.id}: orden numérico incorrecto`);
+  }
   const s=createSession(ordered,{source:'all'});
   for(const item of s.items)assert.deepEqual(item.order,byId[item.id].options.map(o=>o.id));
 });
