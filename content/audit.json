@@ -1,16 +1,19 @@
 {
   "bank": {
-    "status": "sin_alertas_automaticas",
+    "status": "requiere_revision",
     "errors": [],
-    "warnings": [],
+    "warnings": [
+      "Racha de 4 claves A (4 opciones): revisar; puede ser azar legítimo.",
+      "Racha de 4 claves C (4 opciones): revisar; puede ser azar legítimo."
+    ],
     "semantic_review": "No realizada por el script",
-    "question_count": 135,
+    "question_count": 200,
     "key_distribution": {
       "4": {
-        "A": 34,
-        "B": 33,
-        "C": 34,
-        "D": 34
+        "A": 50,
+        "B": 50,
+        "C": 50,
+        "D": 50
       }
     }
   },
@@ -20,43 +23,47 @@
       "errors": [],
       "warnings": [],
       "semantic_review": "No realizada por el script",
-      "question_count": 19,
+      "question_count": 24,
       "key_distribution": {
         "4": {
-          "A": 5,
-          "B": 5,
-          "C": 5,
-          "D": 4
+          "A": 6,
+          "B": 6,
+          "C": 6,
+          "D": 6
         }
       }
     },
     "t21": {
-      "status": "sin_alertas_automaticas",
+      "status": "requiere_revision",
       "errors": [],
-      "warnings": [],
+      "warnings": [
+        "Racha de 4 claves A (4 opciones): revisar; puede ser azar legítimo."
+      ],
       "semantic_review": "No realizada por el script",
-      "question_count": 33,
+      "question_count": 48,
       "key_distribution": {
         "4": {
-          "A": 9,
-          "B": 8,
-          "C": 8,
-          "D": 8
+          "A": 12,
+          "B": 12,
+          "C": 12,
+          "D": 12
         }
       }
     },
     "t22": {
-      "status": "sin_alertas_automaticas",
+      "status": "requiere_revision",
       "errors": [],
-      "warnings": [],
+      "warnings": [
+        "Racha de 4 claves C (4 opciones): revisar; puede ser azar legítimo."
+      ],
       "semantic_review": "No realizada por el script",
-      "question_count": 31,
+      "question_count": 46,
       "key_distribution": {
         "4": {
-          "A": 8,
-          "B": 7,
-          "C": 8,
-          "D": 8
+          "A": 12,
+          "B": 11,
+          "C": 12,
+          "D": 11
         }
       }
     },
@@ -65,13 +72,13 @@
       "errors": [],
       "warnings": [],
       "semantic_review": "No realizada por el script",
-      "question_count": 32,
+      "question_count": 47,
       "key_distribution": {
         "4": {
-          "A": 8,
-          "B": 8,
-          "C": 8,
-          "D": 8
+          "A": 11,
+          "B": 12,
+          "C": 12,
+          "D": 12
         }
       }
     },
@@ -80,13 +87,13 @@
       "errors": [],
       "warnings": [],
       "semantic_review": "No realizada por el script",
-      "question_count": 19,
+      "question_count": 34,
       "key_distribution": {
         "4": {
-          "A": 4,
-          "B": 5,
-          "C": 5,
-          "D": 5
+          "A": 9,
+          "B": 9,
+          "C": 8,
+          "D": 8
         }
       }
     },

@@ -3,10 +3,10 @@ import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {emptyState,selectQuestions,createSession,recordAnswer,failedIds,summarize,gradeSession,validateState} from '../public/core.js';
 const {questions:bank,blocks,retired_question_ids:retiredIds}=JSON.parse(readFileSync(new URL('../public/data/questions.json',import.meta.url),'utf8'));
-const expectedCounts={t1:19,t21:33,t22:31,t31:32,t32:19,t4:1};
+const expectedCounts={t1:24,t21:48,t22:46,t31:47,t32:34,t4:1};
 const byId=Object.fromEntries(bank.map(q=>[q.id,q]));
-test('135 preguntas en seis bloques, cuatro opciones y referencias completas',()=>{
-  assert.equal(bank.length,135);assert.equal(new Set(bank.map(q=>q.id)).size,135);assert.equal(blocks.length,6);
+test('200 preguntas en seis bloques, cuatro opciones y referencias completas',()=>{
+  assert.equal(bank.length,200);assert.equal(new Set(bank.map(q=>q.id)).size,200);assert.equal(blocks.length,6);
   for(const b of blocks) {
     const qs=bank.filter(q=>q.block===b.id);assert.equal(qs.length,expectedCounts[b.id]);
     const positions=[0,0,0,0];
@@ -28,7 +28,7 @@ test('mezcla de 20 sin duplicados, OpenAPI una vez y reparto del resto entre los
     const counts=blocks.filter(b=>b.id!=='t4').map(b=>chosen.filter(q=>q.block===b.id).length);
     assert.ok(counts.every(n=>n===3||n===4));
   }
-  assert.equal(selectQuestions(bank,'all',bank.length).length,135);
+  assert.equal(selectQuestions(bank,'all',bank.length).length,200);
   assert.equal(selectQuestions(bank,'t4').length,1);
 });
 test('la clave sigue al ID con cualquier orden y no cambia el banco original',()=>{
@@ -101,6 +101,22 @@ test('recalcula ejercicios numéricos contra valores independientes',()=>{
   assert.equal(correct('t21-32'),`Unicast: ${100*8} Mbit/s; multicast: 8 Mbit/s`);
   assert.equal(Number.parseInt(correct('t22-23')),Buffer.byteLength('A'.repeat(100),'utf8'));
   assert.equal(Buffer.byteLength('一','utf8'),3);assert.equal(Buffer.byteLength('一','utf16le'),2);
+  assert.equal(Number.parseInt(correct('t21-44')),12/6);
+  assert.equal(parseInt(correct('t22-34'),2),parseInt('0101',2)^parseInt('0011',2)^parseInt('1000',2));
+  assert.equal(parseInt(correct('t22-35'),2),1^1);
+  assert.equal(Number.parseInt(correct('t22-37')),(6-2)*4);
+  assert.equal(Buffer.byteLength('😀','utf8'),4);assert.equal(Buffer.byteLength('😀','utf16le'),4);
+  assert.equal(Number.parseInt(correct('t32-22')),(420-70)/7);
+  assert.equal(Number.parseInt(correct('t32-23')),2**2+2**2+2*2);
+  assert.equal(Number.parseInt(correct('t32-24')),1/(.5**2));
+  assert.equal(Number.parseInt(correct('t32-25')),6**2/3);
+  assert.equal(correct('t32-27'),'1/16');assert.equal(1/(2**4),1/16);
+  assert.ok(Math.abs(10*Math.log10(2)-3)<.02);
+  assert.equal(180*(2/60),6);assert.equal(6*(1-.1),5.4);
+  assert.equal(Number.parseInt(correct('t22-32')),Math.min(2,3));
+  assert.equal(correct('t22-39'),'UTF-8: 4 bytes; UTF-16: 4 bytes; UTF-32: 4 bytes');
+  assert.equal(correct('t32-34'),'6 erlangs ofrecidos y 5,4 erlangs cursados');
+  assert.ok(Math.abs(10**(3/10)-2)<.01);
 });
 test('las exportaciones de alumno y solucionario coinciden con cada clave final',()=>{
   for(const b of blocks){
@@ -139,4 +155,15 @@ test('una sesión compuesta solo por preguntas retiradas se cierra sin borrar ot
   const state=emptyState(),obsolete={...bank[0],id:'t1-14'};
   state.active=createSession([obsolete],{source:'t1'});recordAnswer(state,bank[0],bank[0].correct_option_id);
   const restored=validateState(state,bank,{retiredIds});assert.equal(restored.active,null);assert.equal(restored.stats[bank[0].id].correct,1);
+});
+test('la ampliación añade 65 preguntas y conserva íntegramente los 135 IDs y soluciones anteriores',()=>{
+  const baseline=JSON.parse(readFileSync(new URL('../content/baseline-repaso-2.json',import.meta.url),'utf8'));
+  assert.equal(baseline.length,135);
+  for(const old of baseline){
+    const current=byId[old.id];assert.ok(current,old.id);
+    assert.equal(current.block,old.block);assert.equal(current.correct_option_id,old.correct_option_id);
+    assert.equal(current.options.find(o=>o.id===current.correct_option_id).text,old.correct_text);
+  }
+  const extra=bank.filter(q=>q.practice_batch==='2026-10-26');assert.equal(extra.length,65);
+  for(const [id,n] of Object.entries({t1:5,t21:15,t22:15,t31:15,t32:15,t4:0}))assert.equal(extra.filter(q=>q.block===id).length,n);
 });

@@ -53,3 +53,14 @@ Se usaron puertos locales separados (4174 y 4175) para aislar los datos de prueb
 - Recálculo de los ejercicios nuevos: reserva de búfer 8/(4−2)=4 s; unicast 100×8=800 Mbit/s frente a multicast 8 Mbit/s en el origen; texto ASCII de 100 puntos de código en UTF-8: 100 bytes.
 - Prueba en navegador: las tarjetas muestran bancos de 19, 33, 31, 32, 19 y 1 preguntas. T4 se completa con una única respuesta y muestra fuente web, resultado de 1/1 y progreso del 100 %. La guía presenta doce descargas de cuestionario/solucionario y la comparación de alcance.
 - La guía nueva se revisó a 390 px sin desbordamiento horizontal. Los controles existentes de teclado y mapa siguen pasando sus pruebas.
+
+## Ampliación de práctica del 26 de octubre de 2026
+
+- Se hizo pull fast-forward del commit 85a3e2f del usuario: ocultar etiquetas antes de corregir y explicar todas las alternativas. Su implementación y estilos se conservan; solo se actualizan las referencias de caché y el título de una prueba para que no fije el total anterior.
+- Banco ampliado de 135 a 200: T1 24 (+5), T2.1 48 (+15), T2.2 46 (+15), T3.1 47 (+15), T3.2 34 (+15), T4 1. Ninguna pregunta anterior se retira en esta ampliación.
+- Baseline de 135 IDs y soluciones comprobado automáticamente. Los ítems nuevos tienen IDs posteriores a los existentes, sin reutilizar los retirados, y conservan las explicaciones de sus tres distractores.
+- Audit/prepare/audit y exportaciones de alumno y solucionario regeneradas. No hay errores estructurales ni avisos de longitud; se revisaron y documentaron dos rachas legítimas de cuatro claves iguales. No se fuerza alternancia de letras.
+- 34 pruebas satisfactorias, incluidas las seis pruebas nuevas de interfaz que incorporó el usuario. Comprueban ocultación de etiquetas y explicaciones completas para el banco entero, además de claves, exportaciones, límites de alcance y persistencia.
+- Se recalcularon los ejercicios añadidos: XOR de datos 0101/0011/1000 = 1110, cancelación 0001 XOR 0001 = 0000, RAID 6 (6−2)×4 = 16 TB, búfer inicial 12/6 = 2 s, reparto (420−70)/7 = 50, N(2,2)=12, radio a la mitad implica cuatro veces más celdas, N=6²/3=12, potencia a doble distancia con n=4 queda en 1/16 y tráfico ofrecido/cursado 6/5,4 E. Las pruebas recalculan estos resultados.
+- Navegador: tarjetas con los seis tamaños correctos; test de tema de 20 preguntas con etiqueta oculta antes de corregir; al corregir aparecen las tres razones de las alternativas. El test completo permite abrir la pregunta 200 y sus 200 botones no exceden horizontalmente la tarjeta. Consola sin errores durante el recorrido.
+- La guía explica expresamente el muestreo aleatorio: no se repiten preguntas dentro de una sesión, pero sí pueden reaparecer en tests distintos. El mixto mantiene 20 y el recorrido completo contiene 200.

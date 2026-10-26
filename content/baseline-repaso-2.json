@@ -1,0 +1,812 @@
+[
+  {
+    "id": "t1-11",
+    "block": "t1",
+    "correct_option_id": "o1",
+    "correct_text": "Una app web con capacidades como instalación y funcionamiento sin conexión"
+  },
+  {
+    "id": "t1-10",
+    "block": "t1",
+    "correct_option_id": "o1",
+    "correct_text": "Añade capacidades como tipos y se transpila a JavaScript"
+  },
+  {
+    "id": "t1-13",
+    "block": "t1",
+    "correct_option_id": "o1",
+    "correct_text": "Un framework para apps nativas móviles y de escritorio con C# y XAML"
+  },
+  {
+    "id": "t1-08",
+    "block": "t1",
+    "correct_option_id": "o1",
+    "correct_text": "Un framework de interfaces y apps multiplataforma con tecnologías web"
+  },
+  {
+    "id": "t1-17",
+    "block": "t1",
+    "correct_option_id": "o1",
+    "correct_text": "Tauri"
+  },
+  {
+    "id": "t1-18",
+    "block": "t1",
+    "correct_option_id": "o1",
+    "correct_text": "Uno Platform"
+  },
+  {
+    "id": "t1-07",
+    "block": "t1",
+    "correct_option_id": "o1",
+    "correct_text": "Empaquetar apps web móviles y acceder al dispositivo mediante plugins"
+  },
+  {
+    "id": "t1-03",
+    "block": "t1",
+    "correct_option_id": "o1",
+    "correct_text": "Reutilizar conocimientos web y reducir duplicación de desarrollo"
+  },
+  {
+    "id": "t1-21",
+    "block": "t1",
+    "correct_option_id": "o1",
+    "correct_text": "Crear software orientado a dispositivos como smartphones y tabletas"
+  },
+  {
+    "id": "t1-06",
+    "block": "t1",
+    "correct_option_id": "o1",
+    "correct_text": "Una herramienta para crear apps nativas compartiendo código C#"
+  },
+  {
+    "id": "t1-02",
+    "block": "t1",
+    "correct_option_id": "o1",
+    "correct_text": "Multiplataforma con interfaz nativa"
+  },
+  {
+    "id": "t1-09",
+    "block": "t1",
+    "correct_option_id": "o1",
+    "correct_text": "Ofrecer integración con funciones nativas mediante plugins"
+  },
+  {
+    "id": "t1-19",
+    "block": "t1",
+    "correct_option_id": "o1",
+    "correct_text": "Desarrollo específico con las herramientas nativas de la plataforma"
+  },
+  {
+    "id": "t1-15",
+    "block": "t1",
+    "correct_option_id": "o1",
+    "correct_text": "React Native"
+  },
+  {
+    "id": "t1-04",
+    "block": "t1",
+    "correct_option_id": "o1",
+    "correct_text": "La disponibilidad o creación de un plugin para ese sensor"
+  },
+  {
+    "id": "t1-16",
+    "block": "t1",
+    "correct_option_id": "o1",
+    "correct_text": "Kotlin Multiplatform"
+  },
+  {
+    "id": "t1-20",
+    "block": "t1",
+    "correct_option_id": "o1",
+    "correct_text": "Probar y ajustar el comportamiento en cada plataforma objetivo"
+  },
+  {
+    "id": "t1-05",
+    "block": "t1",
+    "correct_option_id": "o1",
+    "correct_text": "Swift y Xcode"
+  },
+  {
+    "id": "t1-01",
+    "block": "t1",
+    "correct_option_id": "o1",
+    "correct_text": "Desarrollo híbrido"
+  },
+  {
+    "id": "t21-18",
+    "block": "t21",
+    "correct_option_id": "o1",
+    "correct_text": "La reproducción se detiene hasta recuperar una reserva suficiente"
+  },
+  {
+    "id": "t21-17",
+    "block": "t21",
+    "correct_option_id": "o1",
+    "correct_text": "Más tolerancia a retrasos y mayor espera inicial"
+  },
+  {
+    "id": "t21-04",
+    "block": "t21",
+    "correct_option_id": "o1",
+    "correct_text": "Vídeo bajo demanda (VOD)"
+  },
+  {
+    "id": "t21-11",
+    "block": "t21",
+    "correct_option_id": "o1",
+    "correct_text": "RTCP"
+  },
+  {
+    "id": "t21-21",
+    "block": "t21",
+    "correct_option_id": "o1",
+    "correct_text": "Integra varios medios, como texto, audio e imagen, bajo control informático"
+  },
+  {
+    "id": "t21-14",
+    "block": "t21",
+    "correct_option_id": "o1",
+    "correct_text": "HLS con M3U8 y MPEG-DASH con MPD"
+  },
+  {
+    "id": "t21-22",
+    "block": "t21",
+    "correct_option_id": "o1",
+    "correct_text": "Navegación entre contenidos de distintos medios"
+  },
+  {
+    "id": "t21-25",
+    "block": "t21",
+    "correct_option_id": "o1",
+    "correct_text": "Comprobar si el sistema cumple los requisitos definidos"
+  },
+  {
+    "id": "t21-33",
+    "block": "t21",
+    "correct_option_id": "o1",
+    "correct_text": "El retraso excesivo dificulta la interacción aunque llegue todo el contenido"
+  },
+  {
+    "id": "t21-13",
+    "block": "t21",
+    "correct_option_id": "o1",
+    "correct_text": "RTMP"
+  },
+  {
+    "id": "t21-24",
+    "block": "t21",
+    "correct_option_id": "o1",
+    "correct_text": "Planificación y evaluación de costes"
+  },
+  {
+    "id": "t21-19",
+    "block": "t21",
+    "correct_option_id": "o1",
+    "correct_text": "Los espectadores también pueden reenviar fragmentos a otros peers"
+  },
+  {
+    "id": "t21-28",
+    "block": "t21",
+    "correct_option_id": "o1",
+    "correct_text": "4 segundos"
+  },
+  {
+    "id": "t21-31",
+    "block": "t21",
+    "correct_option_id": "o1",
+    "correct_text": "Acerca los archivos al usuario y reduce tráfico de tránsito externo"
+  },
+  {
+    "id": "t21-12",
+    "block": "t21",
+    "correct_option_id": "o1",
+    "correct_text": "RTSP"
+  },
+  {
+    "id": "t21-09",
+    "block": "t21",
+    "correct_option_id": "o1",
+    "correct_text": "TVOD"
+  },
+  {
+    "id": "t21-27",
+    "block": "t21",
+    "correct_option_id": "o1",
+    "correct_text": "Tiene retardo constante y no presenta jitter de llegada"
+  },
+  {
+    "id": "t21-03",
+    "block": "t21",
+    "correct_option_id": "o1",
+    "correct_text": "Se reproduce el contenido mientras siguen llegando sus datos"
+  },
+  {
+    "id": "t21-32",
+    "block": "t21",
+    "correct_option_id": "o1",
+    "correct_text": "Unicast: 800 Mbit/s; multicast: 8 Mbit/s"
+  },
+  {
+    "id": "t21-01",
+    "block": "t21",
+    "correct_option_id": "o1",
+    "correct_text": "Multimedia lineal"
+  },
+  {
+    "id": "t21-29",
+    "block": "t21",
+    "correct_option_id": "o1",
+    "correct_text": "El backend gestiona identidad y catálogo; Open Connect entrega el vídeo"
+  },
+  {
+    "id": "t21-15",
+    "block": "t21",
+    "correct_option_id": "o1",
+    "correct_text": "Solicitar segmentos de una representación de menor bitrate"
+  },
+  {
+    "id": "t21-06",
+    "block": "t21",
+    "correct_option_id": "o1",
+    "correct_text": "Contenido por Internet sin exigir un servicio tradicional de TV de pago"
+  },
+  {
+    "id": "t21-30",
+    "block": "t21",
+    "correct_option_id": "o1",
+    "correct_text": "Que la solicitud esté autorizada por el plan y la licencia del contenido"
+  },
+  {
+    "id": "t21-10",
+    "block": "t21",
+    "correct_option_id": "o1",
+    "correct_text": "RTP"
+  },
+  {
+    "id": "t21-26",
+    "block": "t21",
+    "correct_option_id": "o1",
+    "correct_text": "La eficiencia y rapidez de entrada/salida de los datos"
+  },
+  {
+    "id": "t21-07",
+    "block": "t21",
+    "correct_option_id": "o1",
+    "correct_text": "AVOD"
+  },
+  {
+    "id": "t21-02",
+    "block": "t21",
+    "correct_option_id": "o1",
+    "correct_text": "Mantener las relaciones temporales entre medios"
+  },
+  {
+    "id": "t21-08",
+    "block": "t21",
+    "correct_option_id": "o1",
+    "correct_text": "SVOD"
+  },
+  {
+    "id": "t21-20",
+    "block": "t21",
+    "correct_option_id": "o1",
+    "correct_text": "Un servidor que almacena y entrega contenido audiovisual al cliente"
+  },
+  {
+    "id": "t21-16",
+    "block": "t21",
+    "correct_option_id": "o1",
+    "correct_text": "Jitter"
+  },
+  {
+    "id": "t21-05",
+    "block": "t21",
+    "correct_option_id": "o1",
+    "correct_text": "Multicast"
+  },
+  {
+    "id": "t21-23",
+    "block": "t21",
+    "correct_option_id": "o1",
+    "correct_text": "Representar digitalmente la información bajo control del computador"
+  },
+  {
+    "id": "t22-08",
+    "block": "t22",
+    "correct_option_id": "o1",
+    "correct_text": "Dos lecturas y dos escrituras"
+  },
+  {
+    "id": "t22-06",
+    "block": "t22",
+    "correct_option_id": "o1",
+    "correct_text": "0101"
+  },
+  {
+    "id": "t22-24",
+    "block": "t22",
+    "correct_option_id": "o1",
+    "correct_text": "Siguen accesibles porque queda una copia de cada pareja"
+  },
+  {
+    "id": "t22-22",
+    "block": "t22",
+    "correct_option_id": "o1",
+    "correct_text": "UTF-16, con dos bytes por punto de código"
+  },
+  {
+    "id": "t22-10",
+    "block": "t22",
+    "correct_option_id": "o1",
+    "correct_text": "RAID 6 soporta dos discos fallidos y RAID 5 uno"
+  },
+  {
+    "id": "t22-21",
+    "block": "t22",
+    "correct_option_id": "o1",
+    "correct_text": "UTF-32"
+  },
+  {
+    "id": "t22-14",
+    "block": "t22",
+    "correct_option_id": "o1",
+    "correct_text": "Sin pérdida (lossless)"
+  },
+  {
+    "id": "t22-11",
+    "block": "t22",
+    "correct_option_id": "o1",
+    "correct_text": "Una copia de seguridad anterior al borrado"
+  },
+  {
+    "id": "t22-03",
+    "block": "t22",
+    "correct_option_id": "o1",
+    "correct_text": "8 TB"
+  },
+  {
+    "id": "t22-05",
+    "block": "t22",
+    "correct_option_id": "o1",
+    "correct_text": "0010"
+  },
+  {
+    "id": "t22-20",
+    "block": "t22",
+    "correct_option_id": "o1",
+    "correct_text": "CPU para lógica, NPU para IA y motor de vídeo para codificar"
+  },
+  {
+    "id": "t22-16",
+    "block": "t22",
+    "correct_option_id": "o1",
+    "correct_text": "Localidad temporal"
+  },
+  {
+    "id": "t22-19",
+    "block": "t22",
+    "correct_option_id": "o1",
+    "correct_text": "Multiplicación y acumulación (MAC)"
+  },
+  {
+    "id": "t22-27",
+    "block": "t22",
+    "correct_option_id": "o1",
+    "correct_text": "La monolítica integra el sistema en un chip; la modular combina varios chips"
+  },
+  {
+    "id": "t22-28",
+    "block": "t22",
+    "correct_option_id": "o1",
+    "correct_text": "RISC prioriza instrucciones simples; CISC dispone de un repertorio más complejo"
+  },
+  {
+    "id": "t22-13",
+    "block": "t22",
+    "correct_option_id": "o1",
+    "correct_text": "0,75 MiB"
+  },
+  {
+    "id": "t22-18",
+    "block": "t22",
+    "correct_option_id": "o1",
+    "correct_text": "Una FPGA reconfigurable"
+  },
+  {
+    "id": "t22-12",
+    "block": "t22",
+    "correct_option_id": "o1",
+    "correct_text": "Usa entre uno y cuatro bytes y mantiene la codificación de ASCII"
+  },
+  {
+    "id": "t22-09",
+    "block": "t22",
+    "correct_option_id": "o1",
+    "correct_text": "Calcular la paridad nueva sin leer los datos antiguos de esa franja"
+  },
+  {
+    "id": "t22-07",
+    "block": "t22",
+    "correct_option_id": "o1",
+    "correct_text": "0110"
+  },
+  {
+    "id": "t22-30",
+    "block": "t22",
+    "correct_option_id": "o1",
+    "correct_text": "La mayor sensibilidad a variaciones de luminancia que de crominancia"
+  },
+  {
+    "id": "t22-31",
+    "block": "t22",
+    "correct_option_id": "o1",
+    "correct_text": "Debe alimentar continuamente el procesamiento con muchos datos nuevos"
+  },
+  {
+    "id": "t22-02",
+    "block": "t22",
+    "correct_option_id": "o1",
+    "correct_text": "2 TB"
+  },
+  {
+    "id": "t22-26",
+    "block": "t22",
+    "correct_option_id": "o1",
+    "correct_text": "En las programables específicas, optimizadas para procesamiento de señal"
+  },
+  {
+    "id": "t22-15",
+    "block": "t22",
+    "correct_option_id": "o1",
+    "correct_text": "PNG sin pérdida y JPEG convencional con pérdida"
+  },
+  {
+    "id": "t22-25",
+    "block": "t22",
+    "correct_option_id": "o1",
+    "correct_text": "Programable: cambia instrucciones; dedicada ASIC: circuito fijo; FPGA: lógica reconfigurable"
+  },
+  {
+    "id": "t22-17",
+    "block": "t22",
+    "correct_option_id": "o1",
+    "correct_text": "Alta localidad espacial y baja localidad temporal de los datos"
+  },
+  {
+    "id": "t22-23",
+    "block": "t22",
+    "correct_option_id": "o1",
+    "correct_text": "100 bytes"
+  },
+  {
+    "id": "t22-01",
+    "block": "t22",
+    "correct_option_id": "o1",
+    "correct_text": "El conjunto pierde la disponibilidad íntegra de sus datos"
+  },
+  {
+    "id": "t22-29",
+    "block": "t22",
+    "correct_option_id": "o1",
+    "correct_text": "Reducir el tamaño frente a introducir pérdida de detalle y artefactos"
+  },
+  {
+    "id": "t22-04",
+    "block": "t22",
+    "correct_option_id": "o1",
+    "correct_text": "Va rotando entre los discos del conjunto"
+  },
+  {
+    "id": "t31-13",
+    "block": "t31",
+    "correct_option_id": "o1",
+    "correct_text": "Utiliza radiofrecuencia en la banda ISM de 2,4 GHz"
+  },
+  {
+    "id": "t31-04",
+    "block": "t31",
+    "correct_option_id": "o1",
+    "correct_text": "Automatizar las interconexiones electrónicas al fabricar la tela"
+  },
+  {
+    "id": "t31-29",
+    "block": "t31",
+    "correct_option_id": "o1",
+    "correct_text": "El lector NFC puede comunicarse con esa etiqueta compatible"
+  },
+  {
+    "id": "t31-12",
+    "block": "t31",
+    "correct_option_id": "o1",
+    "correct_text": "Una denominación de Apple asociada a alta densidad de píxeles"
+  },
+  {
+    "id": "t31-31",
+    "block": "t31",
+    "correct_option_id": "o1",
+    "correct_text": "LF (baja frecuencia)"
+  },
+  {
+    "id": "t31-02",
+    "block": "t31",
+    "correct_option_id": "o1",
+    "correct_text": "Pasiva"
+  },
+  {
+    "id": "t31-24",
+    "block": "t31",
+    "correct_option_id": "o1",
+    "correct_text": "Menor coste y mayor estabilidad frente al quemado de una imagen fija"
+  },
+  {
+    "id": "t31-28",
+    "block": "t31",
+    "correct_option_id": "o1",
+    "correct_text": "Debe considerar potencia, antenas, entorno y características de ambos equipos"
+  },
+  {
+    "id": "t31-11",
+    "block": "t31",
+    "correct_option_id": "o1",
+    "correct_text": "Puede apagar los píxeles negros sin una retroiluminación común"
+  },
+  {
+    "id": "t31-21",
+    "block": "t31",
+    "correct_option_id": "o1",
+    "correct_text": "Un chip que integra varios bloques, como CPU, GPU, módem y otros procesadores"
+  },
+  {
+    "id": "t31-06",
+    "block": "t31",
+    "correct_option_id": "o1",
+    "correct_text": "SAW"
+  },
+  {
+    "id": "t31-30",
+    "block": "t31",
+    "correct_option_id": "o1",
+    "correct_text": "No lee esas etiquetas UHF porque opera en otra banda y con otros protocolos"
+  },
+  {
+    "id": "t31-33",
+    "block": "t31",
+    "correct_option_id": "o1",
+    "correct_text": "Reconocer el fallo y establecer un camino alternativo de comunicación"
+  },
+  {
+    "id": "t31-03",
+    "block": "t31",
+    "correct_option_id": "o1",
+    "correct_text": "Tinta electrónica"
+  },
+  {
+    "id": "t31-25",
+    "block": "t31",
+    "correct_option_id": "o1",
+    "correct_text": "Ambas tecnologías comparten parte de la banda radioeléctrica"
+  },
+  {
+    "id": "t31-32",
+    "block": "t31",
+    "correct_option_id": "o1",
+    "correct_text": "Leer una dirección web y descargar después el contenido mediante otra conexión"
+  },
+  {
+    "id": "t31-15",
+    "block": "t31",
+    "correct_option_id": "o1",
+    "correct_text": "Zigbee sobre IEEE 802.15.4"
+  },
+  {
+    "id": "t31-26",
+    "block": "t31",
+    "correct_option_id": "o1",
+    "correct_text": "Que la actividad de una radio degrade la recepción de la otra"
+  },
+  {
+    "id": "t31-09",
+    "block": "t31",
+    "correct_option_id": "o1",
+    "correct_text": "Detección multitáctil mediante una rejilla de electrodos"
+  },
+  {
+    "id": "t31-05",
+    "block": "t31",
+    "correct_option_id": "o1",
+    "correct_text": "Mantener su conductividad durante el uso y los lavados"
+  },
+  {
+    "id": "t31-01",
+    "block": "t31",
+    "correct_option_id": "o1",
+    "correct_text": "Se lleva puesto en el cuerpo y registra, procesa o transmite información"
+  },
+  {
+    "id": "t31-08",
+    "block": "t31",
+    "correct_option_id": "o1",
+    "correct_text": "La presión pone en contacto dos capas conductoras"
+  },
+  {
+    "id": "t31-19",
+    "block": "t31",
+    "correct_option_id": "o1",
+    "correct_text": "Del campo generado por el lector"
+  },
+  {
+    "id": "t31-20",
+    "block": "t31",
+    "correct_option_id": "o1",
+    "correct_text": "Emulación de tarjeta"
+  },
+  {
+    "id": "t31-18",
+    "block": "t31",
+    "correct_option_id": "o1",
+    "correct_text": "NFC usa 13,56 MHz; RFID incluye bandas como LF, HF y UHF"
+  },
+  {
+    "id": "t31-10",
+    "block": "t31",
+    "correct_option_id": "o1",
+    "correct_text": "Cristal líquido con retroiluminación y buenos ángulos de visión"
+  },
+  {
+    "id": "t31-16",
+    "block": "t31",
+    "correct_option_id": "o1",
+    "correct_text": "2,4 GHz, por su menor frecuencia"
+  },
+  {
+    "id": "t31-23",
+    "block": "t31",
+    "correct_option_id": "o1",
+    "correct_text": "La NPU"
+  },
+  {
+    "id": "t31-22",
+    "block": "t31",
+    "correct_option_id": "o1",
+    "correct_text": "RAM: datos temporales de trabajo; flash: almacenamiento persistente"
+  },
+  {
+    "id": "t31-07",
+    "block": "t31",
+    "correct_option_id": "o1",
+    "correct_text": "Imagen óptica"
+  },
+  {
+    "id": "t31-14",
+    "block": "t31",
+    "correct_option_id": "o1",
+    "correct_text": "Perfiles que definen cómo interpretar los datos"
+  },
+  {
+    "id": "t31-27",
+    "block": "t31",
+    "correct_option_id": "o1",
+    "correct_text": "Su diseño para sensores de bajo consumo y pequeños mensajes"
+  },
+  {
+    "id": "t32-20",
+    "block": "t32",
+    "correct_option_id": "o1",
+    "correct_text": "2000 minutos de llamada y aproximadamente 11,11 erlangs"
+  },
+  {
+    "id": "t32-07",
+    "block": "t32",
+    "correct_option_id": "o1",
+    "correct_text": "165 canales"
+  },
+  {
+    "id": "t32-03",
+    "block": "t32",
+    "correct_option_id": "o1",
+    "correct_text": "7 celdas"
+  },
+  {
+    "id": "t32-10",
+    "block": "t32",
+    "correct_option_id": "o1",
+    "correct_text": "20 dB"
+  },
+  {
+    "id": "t32-09",
+    "block": "t32",
+    "correct_option_id": "o1",
+    "correct_text": "73,5"
+  },
+  {
+    "id": "t32-08",
+    "block": "t32",
+    "correct_option_id": "o1",
+    "correct_text": "9,17 km"
+  },
+  {
+    "id": "t32-16",
+    "block": "t32",
+    "correct_option_id": "o1",
+    "correct_text": "Establecer el enlace nuevo antes de soltar el anterior"
+  },
+  {
+    "id": "t32-18",
+    "block": "t32",
+    "correct_option_id": "o1",
+    "correct_text": "10 erlangs"
+  },
+  {
+    "id": "t32-13",
+    "block": "t32",
+    "correct_option_id": "o1",
+    "correct_text": "BSC"
+  },
+  {
+    "id": "t32-14",
+    "block": "t32",
+    "correct_option_id": "o1",
+    "correct_text": "Inter-celda, intra-BSC"
+  },
+  {
+    "id": "t32-06",
+    "block": "t32",
+    "correct_option_id": "o1",
+    "correct_text": "5040 canales"
+  },
+  {
+    "id": "t32-05",
+    "block": "t32",
+    "correct_option_id": "o1",
+    "correct_text": "60 canales"
+  },
+  {
+    "id": "t32-17",
+    "block": "t32",
+    "correct_option_id": "o1",
+    "correct_text": "Se bloquea aunque haya canales de guarda libres"
+  },
+  {
+    "id": "t32-11",
+    "block": "t32",
+    "correct_option_id": "o1",
+    "correct_text": "Más canales por celda y más interferencia cocanal"
+  },
+  {
+    "id": "t32-12",
+    "block": "t32",
+    "correct_option_id": "o1",
+    "correct_text": "Aumentar la capacidad por unidad de superficie"
+  },
+  {
+    "id": "t32-02",
+    "block": "t32",
+    "correct_option_id": "o1",
+    "correct_text": "Asignar un canal disponible mientras dura su uso y liberarlo después"
+  },
+  {
+    "id": "t32-15",
+    "block": "t32",
+    "correct_option_id": "o1",
+    "correct_text": "Mide el móvil y decide la red"
+  },
+  {
+    "id": "t32-19",
+    "block": "t32",
+    "correct_option_id": "o1",
+    "correct_text": "40 %"
+  },
+  {
+    "id": "t32-04",
+    "block": "t32",
+    "correct_option_id": "o1",
+    "correct_text": "1/7"
+  },
+  {
+    "id": "t4-01",
+    "block": "t4",
+    "correct_option_id": "o1",
+    "correct_text": "Un estándar abierto para describir interfaces de APIs HTTP"
+  }
+]

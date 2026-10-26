@@ -2,6 +2,11 @@ export function renderGuide({bank,blocks,heading,escape,icon}) {
   const counts=Object.fromEntries(blocks.map(b=>[b.id,bank.filter(q=>q.block===b.id).length]));
   return `${heading('SEGUNDA GUÍA DE REPASO','El temario, actualizado.','Cambios de alcance, prioridades y referencias para preparar el examen.')}
   <section class="guide-panel">
+    <h2>Más práctica: 200 preguntas</h2>
+    <p>La ampliación añade 65 ejercicios: cinco en T1 y quince en cada bloque T2.1, T2.2, T3.1 y T3.2. Se conservan las preguntas anteriores, la dificultad aproximada y las exclusiones. T4 sigue limitado a una definición de OpenAPI.</p>
+    <p><strong>¿Por qué cambia cada test?</strong> Al empezar se eligen hasta 20 preguntas aleatorias del banco del tema. No se repiten dentro de esa sesión, pero pueden volver a salir en otro test. Para recorrerlas todas, utiliza el test completo.</p>
+  </section>
+  <section class="guide-panel">
     <h2>Qué cambia respecto a la guía anterior</h2>
     <p>El banco reúne ahora <strong>${bank.length} preguntas</strong>. Las nuevas están mezcladas con las anteriores dentro de cada bloque; los tests por tema toman hasta 20 del banco correspondiente.</p>
     <ul>
@@ -31,7 +36,7 @@ export function renderGuide({bank,blocks,heading,escape,icon}) {
     <p><strong>Estudio:</strong> elige una respuesta y pulsa «Comprobar». Aparecen la explicación, el motivo del error y una referencia. Una selección pendiente todavía no cuenta como pregunta comprobada.</p>
     <p><strong>Examen:</strong> puedes responder, volver y cambiar opciones antes de terminar. Las soluciones se muestran al final; las preguntas en blanco se separan de los errores. El porcentaje es de aciertos, sin penalización ni equivalencia con la nota oficial.</p>
     <p><strong>Mixto:</strong> 20 preguntas repartidas entre los seis bloques. Como T4 solo tiene una, aparece una vez y el resto se reparte entre los demás temas. El test completo recorre las ${bank.length} preguntas.</p>
-    <p>Preguntas y opciones se barajan. Las alternativas numéricas conservan un orden lógico. Las preguntas añadidas no forman un test separado: se mezclan con el resto de su bloque.</p>
+    <p>Las selecciones de tests distintos son independientes y pueden compartir preguntas. Preguntas y opciones se barajan. Las alternativas numéricas conservan un orden lógico. Las preguntas añadidas no forman un test separado: se mezclan con el resto de su bloque.</p>
     <p><strong>Teclado:</strong> 1–4 eligen; Espacio o Enter comprueban y otra pulsación avanza. Tab entra en el grupo y las flechas cambian la selección. Mantener la tecla no repite acciones.</p>
     <p><strong>Mis fallos:</strong> repasa hasta 20 preguntas cuyo último intento fue incorrecto. Acertarlas las retira de la lista. Cada estudiante tiene sus datos en su propio navegador; exportar/importar permite trasladarlos.</p>
   </section>

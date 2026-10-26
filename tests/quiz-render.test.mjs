@@ -104,7 +104,7 @@ test('examen: responder, navegar y reanudar ocultan etiquetas y soluciones hasta
   for(const reason of Object.values(q.distractor_rationales))assert.ok(restored.html.includes(escaped(reason)));
 });
 
-test('acertar permite comparar las tres alternativas incorrectas en el orden mostrado en las 135 preguntas',async()=>{
+test('acertar permite comparar las tres alternativas incorrectas en el orden mostrado en todo el banco',async()=>{
   const session=core.createSession(data.questions,{source:'all',mode:'study'});
   const app=await openQuiz(session);
   for(const [index,q] of data.questions.entries()) {

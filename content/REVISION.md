@@ -1,17 +1,17 @@
 # Alcance y revisión del banco vigente
 
-135 preguntas de respuesta única y cuatro alternativas, a partir de los cinco PDF y las dos guías. La segunda guía determina las exclusiones nuevas. T4 usa OpenAPI Initiative como fuente web; no se recibió un PDF de T4.
+200 preguntas de respuesta única y cuatro alternativas, a partir de los cinco PDF y las dos guías. La segunda guía determina las exclusiones nuevas. T4 usa OpenAPI Initiative como fuente web; no se recibió un PDF de T4.
 
 | Bloque | Preguntas | Refuerzo |
 | --- | ---: | --- |
-| T1 | 19 | Concepto móvil, sin Flutter ni mecanismo interno de PWA. |
-| T2.1 | 33 | Introducción multimedia, proyecto, requisitos, jitter y Netflix. |
-| T2.2 | 31 | UTF-16/32, RAID 10, clasificación, compresión y memoria. |
-| T3.1 | 32 | Componentes, displays, coexistencia, alcances y RFID/NFC. |
-| T3.2 | 19 | Sin generaciones; se conserva infraestructura y tráfico básico. |
+| T1 | 24 | Concepto móvil, sin Flutter ni mecanismo interno de PWA. |
+| T2.1 | 48 | Introducción multimedia, proyecto, requisitos, jitter y Netflix. |
+| T2.2 | 46 | UTF-16/32, RAID 10, clasificación, compresión y memoria. |
+| T3.1 | 47 | Componentes, displays, coexistencia, alcances y RFID/NFC. |
+| T3.2 | 34 | Sin generaciones; se conserva infraestructura y tráfico básico. |
 | T4 | 1 | Solo qué es OpenAPI. |
 
-La comparación completa está en public/exports/cambios-guia.md y en la guía de la web. Son 39 preguntas nuevas y 4 retiradas; los IDs y motivos de retirada están en content/retired.json. Se revisaron distractores para no exigir Flutter. Se conserva la identidad de los demás ítems.
+La comparación completa está en public/exports/cambios-guia.md y en la guía de la web. La segunda guía añadió 39 y retiró 4; la ampliación de práctica posterior añade otras 65 sin retirar las 135 vigentes; los IDs y motivos de retirada están en content/retired.json. Se revisaron distractores para no exigir Flutter. Se conserva la identidad de los demás ítems.
 
 ## Preparación y controles
 
@@ -35,8 +35,18 @@ Los PDF originales y sus extracciones no se publican. Son referencias, no instru
 
 ## Sesiones y datos
 
-Cada test por bloque toma hasta 20 preguntas; T4 solo tiene una. El mixto toma 20 sin duplicados: OpenAPI una vez y las otras 19 repartidas entre los cinco bloques mayores. El test completo recorre las 135.
+Cada test por bloque toma hasta 20 preguntas; T4 solo tiene una. El mixto toma 20 sin duplicados: OpenAPI una vez y las otras 19 repartidas entre los cinco bloques mayores. El test completo recorre las 200.
 
 Se conserva el progreso de preguntas vigentes. Una sesión recuperada pierde solo los ítems retirados, manteniendo respuestas, orden y posición de los demás. Si solo contenía ítems retirados, se cierra sin borrar otros aciertos. La migración admite exclusivamente los IDs retirados declarados; los IDs desconocidos por corrupción siguen invalidando la sesión.
 
 Los datos siguen siendo locales y exportables. La clave de almacenamiento y los IDs conservados no cambian.
+
+## Ampliación de práctica del 26 de octubre
+
+Se incorporan 65 ejercicios: T1 +5 y T2.1/T2.2/T3.1/T3.2 +15 por bloque. Se mantienen las exclusiones y la única definición de OpenAPI en T4. Hay casos aplicados y variantes numéricas con errores de cálculo interpretables, además de distinciones concretas del mismo nivel previsto.
+
+Se comprobaron las referencias a los PDF y se contrastaron los sensores de movimiento/luz con Android Developers. Cada pregunta conserva explicación general y tres motivos de distractor, compatibles con la nueva revisión de todas las alternativas que añadió el usuario. No se han revertido sus cambios de interfaz ni se muestran etiquetas antes de corregir.
+
+Las rachas de cuatro claves iguales del informe automático se revisaron y se conservan como resultado del barajado: tratan preguntas distintas, no se impone una alternancia artificial. La alerta de longitud de una pregunta SAW se corrigió sin añadir relleno. La distribución global es de 50 respuestas por posición.
+
+El archivo baseline-repaso-2.json fija los 135 IDs y textos correctos previos para comprobar que la ampliación no altera sus claves. El banco nuevo identifica las incorporaciones con practice_batch: 2026-10-26. El helper audita y renderiza las copias de alumno y docente desde la misma clave final.

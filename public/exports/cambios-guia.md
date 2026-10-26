@@ -1,5 +1,7 @@
 # Comparación de las dos guías de examen
 
+Nota de actualización: esta comparación documenta el paso de 100 a 135 preguntas por cambio de alcance. El 26 de octubre se añadieron después 65 ejercicios de práctica, conservando esas 135 preguntas, hasta un total actual de 200.
+
 La segunda guía amplía y precisa el alcance de la primera. Se han añadido 39 preguntas, retirado 4 y revisado alternativas conservadas para no exigir contenidos excluidos. El banco activo pasa de 100 a 135 preguntas.
 
 | Bloque | Antes | Ahora | Cambio principal |

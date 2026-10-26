@@ -19,7 +19,7 @@ FILES = {
 }
 questions=[]
 def q(block, tag, pages, stem, correct, wrong, explanation, level='Comprensión', url=None):
-    idx = sum(x['block']==block for x in questions)+1
+    idx = max((int(x['id'].rsplit('-',1)[1]) for x in questions if x['block']==block),default=0)+1
     opts=[{'id':'o1','text':correct}]+[{'id':f'o{i+2}','text':t} for i,(t,r) in enumerate(wrong)]
     source=f'{FILES[block]}, páginas PDF {pages}.' if block!='t4' else f'{FILES[block]} · {pages}.'
     if url: source += ' Contraste: '+url
@@ -27,6 +27,7 @@ def q(block, tag, pages, stem, correct, wrong, explanation, level='Comprensión'
         'level':level,'stem':stem,'options':opts,'correct_option_id':'o1',
         'explanation':explanation,'distractor_rationales':{f'o{i+2}':r for i,(t,r) in enumerate(wrong)},
         'source':source,'source_file':FILES[block],'source_pages':pages,'source_type':'web' if block=='t4' else 'pdf','reference_url':url,'shuffle_options':True})
+    return questions[-1]
 
 # T1: identificación de herramientas y decisiones; se excluye arquitectura interna.
 q('t1','Híbrido frente a nativo','13–16',
@@ -441,6 +442,8 @@ q('t32','Volumen frente a intensidad','51, 55',
 def save():
     from guide_update import apply_guide
     retired=apply_guide(questions,BLOCKS,q)
+    from practice_expansion import expand
+    expand(q)
     # Orden numérico/binario ascendente en ejercicios donde facilita comparar resultados.
     ordered={'t21-28','t22-02','t22-03','t22-05','t22-06','t22-07','t22-13','t22-23',
              't32-03','t32-04','t32-05','t32-06','t32-07','t32-08','t32-09','t32-10','t32-18','t32-19'}
@@ -457,7 +460,7 @@ def save():
     out=ROOT/'content'/'draft.json'
     out.parent.mkdir(exist_ok=True)
     out.write_text(json.dumps({'title':'DISM · Banco de estudio','expected_questions':len(questions),'options_per_question':4,
-        'guide_version':'repaso-2','retired_question_ids':list(retired),'blocks':BLOCKS,'questions':questions},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+        'guide_version':'repaso-2','practice_version':'2026-10-26','retired_question_ids':list(retired),'blocks':BLOCKS,'questions':questions},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     (ROOT/'content/retired.json').write_text(json.dumps(retired,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     print(f'Written {len(questions)} questions')
 

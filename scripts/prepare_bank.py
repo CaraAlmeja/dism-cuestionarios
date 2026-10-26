@@ -18,7 +18,7 @@ spec.loader.exec_module(helper)
 draft=json.loads((ROOT/'content/draft.json').read_text(encoding='utf-8'))
 draft_audit=helper.audit(draft)
 assert not draft_audit['errors'],draft_audit
-final={**draft,'questions':[],'version':2}
+final={**draft,'questions':[],'version':3}
 reports={}
 documents=[]
 for i,block in enumerate(draft['blocks']):

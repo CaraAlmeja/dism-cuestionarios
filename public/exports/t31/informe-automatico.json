@@ -3,13 +3,13 @@
   "errors": [],
   "warnings": [],
   "semantic_review": "No realizada por el script",
-  "question_count": 32,
+  "question_count": 47,
   "key_distribution": {
     "4": {
-      "A": 8,
-      "B": 8,
-      "C": 8,
-      "D": 8
+      "A": 11,
+      "B": 12,
+      "C": 12,
+      "D": 12
     }
   }
 }

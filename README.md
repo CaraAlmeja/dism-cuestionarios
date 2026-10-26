@@ -6,23 +6,25 @@ Web de estudio independiente de Diseño e Infraestructura de Sistemas Multimedia
 
 ## Contenido actualizado
 
-135 preguntas originales, cuatro alternativas y una respuesta correcta, revisadas con las dos guías aportadas: 39 nuevas mezcladas con las conservadas y 4 retiradas por las exclusiones nuevas.
+200 preguntas de cuatro alternativas y una respuesta correcta, dentro del alcance de las dos guías. La ampliación del 26 de octubre añade 65 ejercicios sin retirar los 135 existentes: 5 en T1 y 15 en cada bloque T2.1, T2.2, T3.1 y T3.2. T4 mantiene su única pregunta de OpenAPI.
 
 | Bloque | Banco |
 | --- | ---: |
-| T1 · Aplicaciones multiplataforma | 19 |
-| T2.1 · Streaming multimedia | 33 |
-| T2.2 · Almacenamiento y arquitecturas | 31 |
-| T3.1 · Dispositivos y conectividad | 32 |
-| T3.2 · Telefonía móvil | 19 |
+| T1 · Aplicaciones multiplataforma | 24 |
+| T2.1 · Streaming multimedia | 48 |
+| T2.2 · Almacenamiento y arquitecturas | 46 |
+| T3.1 · Dispositivos y conectividad | 47 |
+| T3.2 · Telefonía móvil | 34 |
 | T4 · Qué es OpenAPI | 1 |
 
-- Tests por bloque de hasta 20 preguntas, mixto de 20 y recorrido completo de 135.
+- Tests por bloque de hasta 20 preguntas, mixto de 20 y recorrido completo de 200.
 - Estudio con corrección inmediata y examen con soluciones al finalizar.
 - Explicación del error y referencia a página PDF o fuente web.
 - Repaso de fallos, sesión reanudable, historial y exportación/importación del progreso.
 - Cuestionarios de alumno y solucionarios separados en Markdown.
 - Tema claro/oscuro, vista móvil y mapa largo con desplazamiento interno.
+
+Cada test por tema toma hasta 20 preguntas aleatorias de su banco, sin duplicados en esa sesión. Entre tests distintos pueden repetirse. El mixto reparte 20 entre los bloques y el completo recorre las 200.
 
 En el cuestionario, 1–4 eligen; Espacio/Enter comprueban y otra pulsación avanza. En examen continúan sin revelar la solución. Tab entra en el grupo de respuesta única y las flechas cambian la selección. Mantener la tecla no repite la acción.
 
@@ -54,7 +56,7 @@ Para regenerar se necesita Python 3 y el helper de la skill cuestionarios en ~/.
 python scripts/prepare_bank.py
 ```
 
-scripts/author_bank.py conserva los ítems originales y scripts/guide_update.py aplica las exclusiones y nuevas preguntas. El proceso mezcla dentro de los bloques, equilibra las claves y regenera ambas exportaciones desde un único JSON.
+scripts/author_bank.py conserva los ítems originales y scripts/guide_update.py aplica las exclusiones y nuevas preguntas de la segunda guía; scripts/practice_expansion.py añade los 65 ejercicios de práctica. El proceso mezcla dentro de los bloques, equilibra las claves y regenera ambas exportaciones desde un único JSON.
 
 ## Datos y privacidad
 
